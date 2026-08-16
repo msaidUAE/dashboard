@@ -1,0 +1,227 @@
+.by-kpi-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.view-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.view-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.view-description {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.heatmap-legend {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.legend-color {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.heatmaps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 1.5rem;
+}
+
+.heatmap-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.heatmap-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.heatmap-header {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heatmap-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.heatmap-count {
+  font-size: 0.85rem;
+  color: #999;
+  background: #e8eef7;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.heatmap-table {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-x: auto;
+}
+
+.heatmap-row {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: #f0f0f0;
+}
+
+.heatmap-row.header-row {
+  background: #667eea;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.heatmap-cell {
+  min-width: 80px;
+  width: 80px;
+  height: 40px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.heatmap-row.header-row .heatmap-cell {
+  color: white;
+  border-color: #667eea;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.heatmap-cell.lane-label {
+  min-width: 150px;
+  width: 150px;
+  background: #f8f9fa;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: left;
+  padding-left: 1rem;
+  border-right: 3px solid #667eea;
+}
+
+.heatmap-row.header-row .heatmap-cell.lane-label {
+  background: #667eea;
+  color: white;
+  border-right: 3px solid #764ba2;
+}
+
+.heatmap-cell.date-label {
+  background: #667eea;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.heatmap-value {
+  display: block;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .heatmaps-grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .heatmaps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heatmap-cell {
+    min-width: 60px;
+    width: 60px;
+    height: 35px;
+    font-size: 0.75rem;
+  }
+
+  .heatmap-cell.lane-label {
+    min-width: 100px;
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
+  .heatmap-legend {
+    gap: 1rem;
+  }
+
+  .legend-item {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heatmap-header {
+    padding: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .heatmap-header h3 {
+    font-size: 1rem;
+  }
+
+  .heatmap-cell {
+    min-width: 50px;
+    width: 50px;
+    height: 30px;
+    font-size: 0.65rem;
+  }
+
+  .heatmap-cell.lane-label {
+    min-width: 80px;
+    width: 80px;
+    font-size: 0.7rem;
+  }
+}
