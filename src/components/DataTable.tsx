@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { KPIRecord, KPIStatus } from '../types';
-import { determineStatus, formatDate, parseNumericValue } from '../utils/dataProcessor';
+import { determineStatus, formatDate } from '../utils/dataProcessor';
 import '../styles/DataTable.css';
 
 interface DataTableProps {

@@ -1,18 +1,28 @@
-import { KPIRecord, FilterState } from '../types';
+import { KPIRecord, FilterState, KPIStatus } from '../types';
+
+/**
+ * Lane names are normalized so that the raw `Al_Zubair_Lane_3_h` record
+ * (a single-day duplicate of `Al_Zubair_Lane_3` in the source CSV) maps onto
+ * the canonical lane. This keeps the dashboard at the 6 defined lanes while
+ * preserving all 1403 source records.
+ */
+const normalizeLane = (lane: string): string => {
+  return lane.replace(/_h$/, '');
+};
 
 /**
  * Parse CSV content to KPI records with proper CSV handling
  */
 export const parseCSV = (csvContent: string): KPIRecord[] => {
   const lines = csvContent.trim().split('\n');
-  
+
   const records: KPIRecord[] = lines.slice(1).map((line) => {
     // Properly parse CSV with quoted fields
     const values = parseCSVLine(line);
-    
+
     return {
       Date: values[0]?.trim() || '',
-      Lane: values[1]?.trim() || '',
+      Lane: normalizeLane(values[1]?.trim() || ''),
       Batch: values[2]?.trim() || '',
       KPI_ID: values[3]?.trim() || '',
       KPI_Title: values[4]?.trim() || '',
@@ -22,7 +32,7 @@ export const parseCSV = (csvContent: string): KPIRecord[] => {
     };
   });
 
-  return records.filter(r => r.Date && r.Lane && r.KPI_Title);
+  return records.filter((r) => r.Date && r.Lane && r.KPI_Title);
 };
 
 /**
@@ -50,61 +60,189 @@ const parseCSVLine = (line: string): string[] => {
   return result;
 };
 
+/** The six result-range buckets, ordered high → low. */
+export const RESULT_RANGES: string[] = [
+  '95-100%',
+  '90-95%',
+  '80-90%',
+  '70-80%',
+  '50-70%',
+  '<50%',
+];
+
 /**
  * Extract unique values from dataset for filter options
  */
 export const extractFilterOptions = (data: KPIRecord[]) => {
   return {
-    dates: Array.from(new Set(data.map(r => r.Date)))
-      .sort()
-      .map(d => formatDate(d)),
-    lanes: Array.from(new Set(data.map(r => r.Lane))).sort(),
-    kpiTitles: Array.from(new Set(data.map(r => r.KPI_Title)))
-      .filter(k => k && k !== 'NO_DATA_AVAILABLE')
+    dates: sortDatesChronologically(
+      Array.from(new Set(data.map((r) => r.Date)))
+    ).map((d) => formatDate(d)),
+    lanes: Array.from(new Set(data.map((r) => r.Lane))).sort(),
+    kpiTitles: Array.from(new Set(data.map((r) => r.KPI_Title)))
+      .filter((k) => k && k !== 'NO_DATA_AVAILABLE')
       .sort(),
-    actualResultRanges: [
-      'Between 95 - 100',
-      'Between 90 - 95',
-      'Between 80 - 90',
-      'Between 70 - 80',
-      'Between 50 - 70',
-      'Below 50'
-    ],
+    actualResultRanges: RESULT_RANGES,
   };
+};
+
+/**
+ * Determine whether a raw result string represents "no data".
+ */
+export const isNoData = (value: string): boolean => {
+  if (!value) return true;
+  const v = value.trim().toUpperCase();
+  return (
+    v === '' ||
+    v === 'N/A' ||
+    v === 'NA' ||
+    v === 'NO_DATA' ||
+    v === 'NO_DATA_AVAILABLE' ||
+    v === 'NOT_AVAILABLE'
+  );
+};
+
+/**
+ * Parse numeric value from a result string into a normalized 0-100 score.
+ * Handles percentages, seconds, unit-less values, and status strings.
+ */
+export const parseNumericValue = (value: string): number => {
+  if (isNoData(value)) {
+    return 0;
+  }
+
+  const trimmed = value.trim();
+
+  // Status strings: a "SUCCESS" state is treated as fully achieved (100%).
+  if (trimmed.toUpperCase() === 'SUCCESS') {
+    return 100;
+  }
+
+  // Remove common suffixes and thousands separators.
+  let cleanValue = trimmed
+    .replace(/%/g, '')
+    .replace(/sec(onds)?/gi, '')
+    .replace(/,/g, '')
+    .trim();
+
+  const num = parseFloat(cleanValue);
+
+  if (isNaN(num)) {
+    return 0;
+  }
+
+  // Ensure values are within 0-100.
+  if (num > 100) {
+    return 100;
+  }
+
+  if (num < 0) {
+    return 0;
+  }
+
+  return num;
+};
+
+/**
+ * Format a number with up to two decimals, trimming trailing zeros.
+ */
+const formatNumber = (value: number): string => {
+  if (Number.isInteger(value)) return String(value);
+  const rounded = Math.round(value * 100) / 100;
+  return String(rounded);
+};
+
+/**
+ * Return a professional, unit-aware display string for a raw result.
+ */
+export const formatResultValue = (value: string): string => {
+  if (isNoData(value)) return 'N/A';
+
+  const trimmed = value.trim();
+  if (trimmed.toUpperCase() === 'SUCCESS') return 'SUCCESS';
+
+  const hasSeconds = /sec(onds)?/i.test(trimmed);
+
+  const clean = trimmed
+    .replace(/%/g, '')
+    .replace(/sec(onds)?/gi, '')
+    .replace(/,/g, '')
+    .trim();
+  const num = parseFloat(clean);
+
+  if (isNaN(num)) return trimmed;
+
+  if (hasSeconds) return `${formatNumber(num)} sec`;
+  // Percentages (with or without an explicit "%" suffix) use "%".
+  return `${formatNumber(num)}%`;
+};
+
+/**
+ * Aggregate a set of records (same lane + KPI + date) into a single
+ * value/display pair. Multiple batches are averaged; no-data is represented
+ * as null so it can be rendered distinctly from a genuine 0%.
+ */
+export const aggregateRecords = (
+  records: KPIRecord[]
+): { value: number | null; display: string } => {
+  const valid = records.filter((r) => !isNoData(r.Actual_Result));
+
+  if (valid.length === 0) {
+    return { value: null, display: 'N/A' };
+  }
+
+  const sum = valid.reduce(
+    (acc, r) => acc + parseNumericValue(r.Actual_Result),
+    0
+  );
+  const average = sum / valid.length;
+
+  // Pick a representative unit from the first valid record.
+  const sample = valid[0].Actual_Result;
+  const hasSeconds = /sec(onds)?/i.test(sample);
+  const isSuccess = sample.trim().toUpperCase() === 'SUCCESS';
+
+  let display: string;
+  if (isSuccess) {
+    display = 'SUCCESS';
+  } else if (hasSeconds) {
+    display = `${formatNumber(average)} sec`;
+  } else {
+    display = `${formatNumber(average)}%`;
+  }
+
+  return { value: average, display };
 };
 
 /**
  * Get result range category
  */
 export const getResultRange = (value: string): string => {
-  if (value === 'NO_DATA_AVAILABLE' || value === '') return 'NO_DATA';
-  
+  if (isNoData(value)) return 'NO_DATA';
+
   const num = parseNumericValue(value);
-  if (num >= 95) return 'Between 95 - 100';
-  if (num >= 90) return 'Between 90 - 95';
-  if (num >= 80) return 'Between 80 - 90';
-  if (num >= 70) return 'Between 70 - 80';
-  if (num >= 50) return 'Between 50 - 70';
-  return 'Below 50';
+  if (num >= 95) return '95-100%';
+  if (num >= 90) return '90-95%';
+  if (num >= 80) return '80-90%';
+  if (num >= 70) return '70-80%';
+  if (num >= 50) return '50-70%';
+  return '<50%';
 };
 
 /**
  * Determine KPI status based on actual result
  */
-export const determineStatus = (actualResult: string): string => {
-  if (actualResult === 'NO_DATA_AVAILABLE' || actualResult === '') {
-    return 'NO_DATA';
+export const determineStatus = (actualResult: string): KPIStatus => {
+  if (isNoData(actualResult)) {
+    return KPIStatus.NO_DATA;
   }
 
-  const numValue = parseFloat(actualResult.replace('%', ''));
-  if (isNaN(numValue)) {
-    return 'GOOD';
-  }
+  const numValue = parseNumericValue(actualResult);
 
-  if (numValue >= 90) return 'EXCELLENT';
-  if (numValue >= 75) return 'GOOD';
-  if (numValue >= 50) return 'WARNING';
-  return 'CRITICAL';
+  if (numValue >= 90) return KPIStatus.EXCELLENT;
+  if (numValue >= 75) return KPIStatus.GOOD;
+  if (numValue >= 50) return KPIStatus.WARNING;
+  return KPIStatus.CRITICAL;
 };
 
 /**
@@ -139,43 +277,6 @@ export const filterData = (
 };
 
 /**
- * Parse numeric value from result string
- * Handles percentages, seconds, and other numeric formats
- */
-export const parseNumericValue = (value: string): number => {
-  if (!value || value === 'NO_DATA_AVAILABLE' || value === 'N/A') {
-    return 0;
-  }
-
-  // Remove common suffixes
-  let cleanValue = value
-    .replace('%', '')
-    .replace('sec', '')
-    .replace('seconds', '')
-    .trim();
-
-  // Parse the numeric value
-  const num = parseFloat(cleanValue);
-
-  // Return 0 if not a valid number
-  if (isNaN(num)) {
-    return 0;
-  }
-
-  // Ensure percentage values are within 0-100
-  if (num > 100) {
-    return 100;
-  }
-
-  // Return negative numbers as 0 (sometimes we get negative values)
-  if (num < 0) {
-    return 0;
-  }
-
-  return num;
-};
-
-/**
  * Convert date format DDMMYYYY to readable format
  */
 export const formatDate = (dateStr: string): string => {
@@ -184,6 +285,18 @@ export const formatDate = (dateStr: string): string => {
   const month = dateStr.substring(2, 4);
   const year = dateStr.substring(4, 8);
   return `${day}/${month}/${year}`;
+};
+
+/**
+ * Sort DDMMYYYY date strings in true chronological order
+ * (string sort breaks across month boundaries).
+ */
+export const sortDatesChronologically = (dates: string[]): string[] => {
+  return [...dates].sort((a, b) => {
+    const key = (d: string) =>
+      d.length === 8 ? `${d.substring(4, 8)}${d.substring(2, 4)}${d.substring(0, 2)}` : d;
+    return key(a).localeCompare(key(b));
+  });
 };
 
 /**

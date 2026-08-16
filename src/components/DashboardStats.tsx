@@ -1,5 +1,5 @@
 import React from 'react';
-import { KPIRecord, DashboardStats as DashboardStatsType } from '../types';
+import { DashboardStats as DashboardStatsType } from '../types';
 import { formatDate } from '../utils/dataProcessor';
 import '../styles/DashboardStats.css';
 
@@ -14,13 +14,6 @@ export const DashboardStats: React.FC<DashboardStatsProps> = ({
   filteredCount,
   totalCount,
 }) => {
-  const getStatusColor = (value: number): string => {
-    if (value >= 90) return 'excellent';
-    if (value >= 75) return 'good';
-    if (value >= 50) return 'warning';
-    return 'critical';
-  };
-
   return (
     <div className="dashboard-stats">
       <div className="stats-grid">

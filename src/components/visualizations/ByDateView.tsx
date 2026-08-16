@@ -1,7 +1,13 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { KPIRecord } from '../../types';
-import { parseNumericValue, groupByKPITitle, formatDate } from '../../utils/dataProcessor';
+import {
+  groupByKPITitle,
+  aggregateRecords,
+  sortDatesChronologically,
+  formatDate,
+} from '../../utils/dataProcessor';
+import { getLaneColor } from '../../utils/colors';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -11,135 +17,148 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from 'chart.js';
 import '../../styles/ByDateView.css';
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+);
 
 interface ByDateViewProps {
   data: KPIRecord[];
 }
 
-const LANE_COLORS: { [key: string]: string } = {
-  'Al_Dhead_Lane_1_Daily': '#FF6384',
-  'Al_Dhead_Lane_2_Daily': '#36A2EB',
-  'Al_Dhead_Lane_3_Daily': '#FFCE56',
-  'Al_Madam_Lane_3': '#4BC0C0',
-  'Al_Zubair_Lane_3': '#9966FF',
-  'Al_Zubair_Lane_4': '#FF9F40',
-};
+interface Cell {
+  value: number | null;
+  display: string;
+}
 
 export const ByDateView: React.FC<ByDateViewProps> = ({ data }) => {
   const groupedByKPI = groupByKPITitle(data);
   const kpiTitles = Object.keys(groupedByKPI)
-    .filter(k => k && k !== 'NO_DATA_AVAILABLE')
+    .filter((k) => k && k !== 'NO_DATA_AVAILABLE')
     .sort();
 
-  // Get all unique lanes
-  const allLanes = Array.from(new Set(data.map(r => r.Lane))).sort();
-
-  // Get all unique dates
-  const allDates = Array.from(new Set(data.map(r => r.Date)))
-    .sort()
-    .map(d => ({ raw: d, formatted: formatDate(d) }));
+  const lanes = Array.from(new Set(data.map((r) => r.Lane))).sort();
+  const dates = sortDatesChronologically(
+    Array.from(new Set(data.map((r) => r.Date)))
+  );
 
   const renderKPITrendCard = (kpiTitle: string) => {
     const kpiRecords = groupedByKPI[kpiTitle];
 
-    // For each lane, create trend data
-    const laneDatasets = allLanes.map((lane, laneIndex) => {
-      const laneRecords = kpiRecords.filter(r => r.Lane === lane);
-
-      // Get trend data for this lane
-      const trendData = allDates.map(dateObj => {
-        const dateRecords = laneRecords.filter(r => r.Date === dateObj.raw);
-        if (dateRecords.length === 0) return null;
-
-        const validRecords = dateRecords.filter(r => r.Actual_Result !== 'NO_DATA_AVAILABLE');
-        if (validRecords.length === 0) return null;
-
-        const sum = validRecords.reduce((acc, r) => acc + parseNumericValue(r.Actual_Result), 0);
-        return sum / validRecords.length;
-      });
-
-      return {
-        label: lane,
-        data: trendData,
-        borderColor: LANE_COLORS[lane] || `hsl(${laneIndex * 60}, 70%, 50%)`,
-        backgroundColor: `${LANE_COLORS[lane] || `hsl(${laneIndex * 60}, 70%, 50%)`}20`,
-        tension: 0.4,
-        fill: false,
-        pointRadius: 4,
-        pointHoverRadius: 6,
-      };
+    // Index records by lane → date.
+    const byLaneDate: { [lane: string]: { [date: string]: KPIRecord[] } } = {};
+    kpiRecords.forEach((record) => {
+      if (!byLaneDate[record.Lane]) byLaneDate[record.Lane] = {};
+      if (!byLaneDate[record.Lane][record.Date]) {
+        byLaneDate[record.Lane][record.Date] = [];
+      }
+      byLaneDate[record.Lane][record.Date].push(record);
     });
 
+    // Pre-aggregate every lane × date cell for datasets and tooltips.
+    const cells: { [lane: string]: { [date: string]: Cell } } = {};
+    lanes.forEach((lane) => {
+      cells[lane] = {};
+      dates.forEach((date) => {
+        cells[lane][date] = aggregateRecords(
+          byLaneDate[lane]?.[date] ?? []
+        );
+      });
+    });
+
+    const datasets = lanes.map((lane, laneIndex) => ({
+      label: lane,
+      data: dates.map((date) => cells[lane][date].value),
+      borderColor: getLaneColor(lane, laneIndex),
+      backgroundColor: getLaneColor(lane, laneIndex),
+      tension: 0.3,
+      spanGaps: true,
+      fill: false,
+      pointRadius: 3,
+      pointHoverRadius: 5,
+      borderWidth: 2,
+    }));
+
     const chartData = {
-      labels: allDates.map(d => d.formatted),
-      datasets: laneDatasets,
+      labels: dates.map((d) => formatDate(d)),
+      datasets,
     };
 
     const chartOptions = {
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       interaction: {
         mode: 'index' as const,
         intersect: false,
       },
       plugins: {
-        legend: { 
-          display: true, 
+        legend: {
+          display: true,
           position: 'top' as const,
           labels: {
-            font: { size: 12, weight: 'bold' as const },
-            padding: 15,
+            font: { size: 11, weight: 'bold' as const },
+            padding: 12,
             usePointStyle: true,
-            pointStyle: 'circle',
-          }
+            pointStyle: 'circle' as const,
+          },
         },
-        title: { 
-          display: true, 
-          text: `${kpiTitle} - Trend by Lane`,
-          font: { size: 15, weight: 'bold' as const },
-          padding: { bottom: 20 }
+        title: {
+          display: true,
+          text: kpiTitle,
+          font: { size: 14, weight: 'bold' as const },
+          color: '#1e293b',
+          padding: { bottom: 8 },
         },
         tooltip: {
-          enabled: true,
-          backgroundColor: 'rgba(0,0,0,0.8)',
+          backgroundColor: 'rgba(15, 23, 42, 0.92)',
           titleFont: { size: 13, weight: 'bold' as const },
           bodyFont: { size: 12 },
           padding: 10,
-          displayColors: true,
           callbacks: {
-            label: function(context: any) {
-              return `${context.dataset.label}: ${context.parsed.y?.toFixed(2) ?? 'N/A'}%`;
-            }
-          }
-        }
+            title: (items: any) => formatDate(dates[items[0].dataIndex]),
+            label: (context: any) => {
+              const lane = lanes[context.datasetIndex];
+              const date = dates[context.dataIndex];
+              const { display } = cells[lane][date];
+              return ` ${lane}: ${display}`;
+            },
+          },
+        },
       },
       scales: {
         y: {
           beginAtZero: true,
           max: 100,
           ticks: {
-            callback: function(value: any) {
-              return value + '%';
-            },
-            font: { size: 12 },
+            callback: (value: any) => `${value}%`,
+            font: { size: 11 },
           },
-          title: { 
-            display: true, 
+          title: {
+            display: true,
             text: 'Performance (%)',
-            font: { size: 13, weight: 'bold' as const }
+            font: { size: 12, weight: 'bold' as const },
           },
+          grid: { color: 'rgba(148, 163, 184, 0.15)' },
         },
         x: {
           ticks: {
-            font: { size: 11 },
-            maxRotation: 45,
+            font: { size: 10 },
+            maxRotation: 60,
             minRotation: 45,
-          }
-        }
+            autoSkip: false,
+          },
+          grid: { display: false },
+        },
       },
     };
 
@@ -157,12 +176,12 @@ export const ByDateView: React.FC<ByDateViewProps> = ({ data }) => {
       <div className="view-header">
         <h2>KPI Trends by Date</h2>
         <p className="view-description">
-          {kpiTitles.length} KPI indicators | {allLanes.length} lanes | {allDates.length} dates
+          {kpiTitles.length} KPI indicators × {lanes.length} lanes × {dates.length} dates
         </p>
       </div>
 
       <div className="trends-container">
-        {kpiTitles.map(kpiTitle => renderKPITrendCard(kpiTitle))}
+        {kpiTitles.map((kpiTitle) => renderKPITrendCard(kpiTitle))}
       </div>
     </div>
   );

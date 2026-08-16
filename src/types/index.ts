@@ -35,6 +35,14 @@ export interface DashboardStats {
 
 export type ViewMode = 'byLane' | 'byKPI' | 'byDate';
 
+export enum KPIStatus {
+  EXCELLENT = 'EXCELLENT',
+  GOOD = 'GOOD',
+  WARNING = 'WARNING',
+  CRITICAL = 'CRITICAL',
+  NO_DATA = 'NO_DATA',
+}
+
 export interface LaneVisualization {
   lane: string;
   kpiData: { [kpiTitle: string]: number };

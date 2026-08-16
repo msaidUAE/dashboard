@@ -7,6 +7,7 @@ import {
   parseCSV,
   extractFilterOptions,
   filterData,
+  sortDatesChronologically,
 } from './utils/dataProcessor';
 import './styles/App.css';
 
@@ -41,7 +42,7 @@ const App: React.FC = () => {
 
         // Calculate initial stats
         if (parsedData.length > 0) {
-          const dates = parsedData.map(r => r.Date).sort();
+          const dates = sortDatesChronologically(parsedData.map(r => r.Date));
           setStats({
             totalRecords: parsedData.length,
             uniqueLanes: new Set(parsedData.map(r => r.Lane)).size,
