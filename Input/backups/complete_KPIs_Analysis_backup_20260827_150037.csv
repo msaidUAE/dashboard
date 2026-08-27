@@ -1,0 +1,1405 @@
+Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence
+03082026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,82.93%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,97.56%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,97.56%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,17.07%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,14.63%,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,14.63%,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,85.37%,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),15.472 sec,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),15.472 sec,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+03082026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,70.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,81.25%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),81.25%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,18.75%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),18.75%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,30.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,2.50%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,2.50%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,97.50%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),15.659 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),13.171 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-01,ANPR Detection Rate,74.07,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-02,ANPR Accuracy (range-based),55.56,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-03,RFID Reading Rate,0.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-06,AVC Detection Rate,81.25,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-08,Axle-Counter Detection Rate,87.50,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-10,Invalid Transaction Rate,21.88,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-11,WIM Detection Rate,0.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-01,Ultimate Success Rate,65.63,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-02,Automated Pass Rate,65.63,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-03,Manual Processing Rate,34.38,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-04,Escalation Processing Rate,34.38,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),4952.77,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Dhead_Lane_1_Daily,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,100.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,66.67%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),66.67%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,33.33%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,33.33%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,66.67%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),16.133 sec,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),16.133 sec,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,71.52%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,97.47%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),97.47%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,59.49%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),59.49%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,28.48%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,18.35%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,18.99%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,81.01%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),12.519 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),12.761 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,82.14%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,57.14%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,17.86%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,21.43%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,21.43%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,78.57%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),13.286 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),13.286 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,46.42857142857143,verification_json,HIGH
+21072026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,HW-01,ANPR Detection Rate,82.14%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-08,Axle-Counter Detection Rate,57.14%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-10,Invalid Transaction Rate,17.86%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,SW-01,Ultimate Success Rate,21.43%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-02,Automated Pass Rate,21.43%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-03,Manual Processing Rate,78.57%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),13.286 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),13.286 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_1_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_1_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,51.68%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,81.88%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),81.21%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,30.20%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),30.20%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,48.32%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,71.14%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,71.14%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,5.37%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,18.12%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,81.88%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),27.223 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),26.473 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,72.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,32.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),32.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,28.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,4.00%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,24.00%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,76.00%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),13.320 sec,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,96,verification_json,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,16.666666666666664,verification_json,HIGH
+07072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,95.31%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,98.44%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,4.69%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,95.31%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,93.94%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,87.88%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),87.88%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,6.06%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,93.94%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,93.94%,input_hardware_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,54.55%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,57.58%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,42.42%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),14.061 sec,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),14.061 sec,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+12072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+12072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,84.62%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,98.46%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),98.46%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,86.15%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),86.15%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,15.38%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,89.23%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,89.23%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,24.62%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,33.85%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,66.15%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),16.689 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),15.704 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,87.50%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,62.50%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,75.00%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,25.00%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),31.375 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),73.000 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,87.5,verification_json,HIGH
+21072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,HW-01,ANPR Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-08,Axle-Counter Detection Rate,87.50%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-10,Invalid Transaction Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-01,Ultimate Success Rate,62.50%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-02,Automated Pass Rate,75.00%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-03,Manual Processing Rate,25.00%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),31.375 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),73.000 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_2_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_2_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,88.04%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),1.23%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,1.09%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,98.91%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,11.96%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,35.87%,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,35.87%,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,64.13%,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),15.783 sec,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),15.783 sec,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+04082026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+04082026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,53.85%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,81.82%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),81.12%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,41.26%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),41.26%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,46.15%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,67.83%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,67.83%,input_hardware_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,12.59%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,22.38%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,77.62%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),26.403 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),42.581 sec,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+05072026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+05072026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,73.08%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,38.46%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),38.46%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,26.92%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,92.31%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,92.31%,input_hardware_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,23.08%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,42.31%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,57.69%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),14.231 sec,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+07072026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,30.76923076923077,verification_json,HIGH
+07072026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,76.39%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,23.61%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,87.50%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+09082026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,81.08%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,94.59%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),91.89%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,71.62%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),71.62%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,18.92%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,87.84%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,87.84%,input_hardware_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,21.62%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,28.38%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,71.62%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),18.182 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),16.651 sec,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+13072026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+13072026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,85.71%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,85.71%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,14.29%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,14.29%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,14.29%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,85.71%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),20.357 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),20.357 sec,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,78.57142857142857,verification_json,HIGH
+21072026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,HW-01,ANPR Detection Rate,85.71%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-08,Axle-Counter Detection Rate,85.71%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-10,Invalid Transaction Rate,14.29%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-01,Ultimate Success Rate,14.29%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-02,Automated Pass Rate,14.29%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-03,Manual Processing Rate,85.71%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-07,Elapsed Time at Plaza Manager (avg),20.357 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-08,Avg Truck Passing Time (MASAR Domain),20.357 sec,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Dhead_Lane_3_Daily,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Dhead_Lane_3_Daily,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Madam_Lane_3,,HW-01,ANPR Detection Rate,0.00%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-02,ANPR Accuracy (range-based),NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Madam_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-06,AVC Detection Rate,98.01%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-07,AVC Accuracy (range-based),98.62%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-08,Axle-Counter Detection Rate,90.21%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-10,Invalid Transaction Rate,100.00%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+03082026,Al_Madam_Lane_3,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Madam_Lane_3,,SW-01,Ultimate Success Rate,0.00%,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-02,Automated Pass Rate,0.00%,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-03,Manual Processing Rate,100.00%,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-04,Escalation Processing Rate,6.41%,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),41.122 sec,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),40.622 sec,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,SW-10,System Availability,99.9975%,input_software_csv,HIGH
+03082026,Al_Madam_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Madam_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+03082026,Al_Madam_Lane_3,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+03082026,Al_Madam_Lane_3,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+03082026,Al_Madam_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Madam_Lane_3,,CMP-02,Attachment_Compliance_Status,SUCCESS,verification_json,HIGH
+21072026,Al_Madam_Lane_3,,HW-01,ANPR Detection Rate,66.67%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-08,Axle-Counter Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-10,Invalid Transaction Rate,33.33%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-11,WIM Detection Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Madam_Lane_3,,HW-12,WIM Accuracy,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Madam_Lane_3,,SW-01,Ultimate Success Rate,50.00%,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-02,Automated Pass Rate,50.00%,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-03,Manual Processing Rate,50.00%,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),16.333 sec,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),16.333 sec,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Madam_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Madam_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Madam_Lane_3,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+21072026,Al_Madam_Lane_3,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Madam_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Madam_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,HW-01,ANPR Detection Rate,84.38%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-06,AVC Detection Rate,96.88%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-08,Axle-Counter Detection Rate,96.88%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-10,Invalid Transaction Rate,15.63%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-11,WIM Detection Rate,93.75%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-01,Ultimate Success Rate,75.00%,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-02,Automated Pass Rate,75.00%,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-03,Manual Processing Rate,25.00%,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),12.212 sec,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),12.597 sec,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Madam_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Madam_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,94.12%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),5.88%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,2.94%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,85.29%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),79.41%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,94.12%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),94.12%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,5.88%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,94.12%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,94.12%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,23.53%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,26.47%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,73.53%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),38.546 sec,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),21.636 sec,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,82.48%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),1.46%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,1.46%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,24.82%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),13.87%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,63.50%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),63.50%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,17.52%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,92.70%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,92.70%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,2.19%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,7.30%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,92.70%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),41.133 sec,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),20.097 sec,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,80.95%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,83.33%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),83.33%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,50.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),50.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,19.05%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,88.10%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,88.10%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,16.67%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,26.19%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,73.81%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),37.757 sec,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),15.391 sec,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,HW-01,ANPR Detection Rate,88.71,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-02,ANPR Accuracy (range-based),87.10,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-03,RFID Reading Rate,9.84,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-06,AVC Detection Rate,1.64,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-07,AVC Accuracy (range-based),0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-09,Axle-Counting Accuracy (range-based),88.71,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-10,Invalid Transaction Rate,4.92,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-11,WIM Detection Rate,93.44,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-01,Ultimate Success Rate,0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-02,Automated Pass Rate,11.48,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-03,Manual Processing Rate,88.52,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-04,Escalation Processing Rate,88.52,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),12756.24,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,SW-10,System Availability,99.99,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,HW-01,ANPR Detection Rate,89.29,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-02,ANPR Accuracy (range-based),85.71,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-03,RFID Reading Rate,5.26,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-06,AVC Detection Rate,97.37,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-08,Axle-Counter Detection Rate,97.37,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-09,Axle-Counting Accuracy (range-based),96.15,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-10,Invalid Transaction Rate,2.63,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-11,WIM Detection Rate,94.74,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-01,Ultimate Success Rate,55.26,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-02,Automated Pass Rate,55.26,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-03,Manual Processing Rate,44.74,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-04,Escalation Processing Rate,50.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),382.50,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_3,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_3,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,88.64%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),2.27%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,4.55%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,27.27%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),22.73%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,84.09%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),84.09%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,9.09%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,88.64%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,88.64%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,13.64%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,27.27%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,72.73%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),16.767 sec,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),16.881 sec,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+09072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+09072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+09072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,72.72727272727273,verification_json,HIGH
+09072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-03,RFID Reading Rate,9.52,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-07,AVC Accuracy (range-based),95.24,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-10,Invalid Transaction Rate,0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-11,WIM Detection Rate,90.48,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-01,Ultimate Success Rate,50.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-02,Automated Pass Rate,50.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-03,Manual Processing Rate,50.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-04,Escalation Processing Rate,50.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),7206.03,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-03,RFID Reading Rate,9.38,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-10,Invalid Transaction Rate,3.13,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-11,WIM Detection Rate,90.63,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-01,Ultimate Success Rate,53.13,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-02,Automated Pass Rate,53.13,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-03,Manual Processing Rate,46.88,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-04,Escalation Processing Rate,46.88,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),6755.17,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_3,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_3,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,HW-01,ANPR Detection Rate,88.71,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-02,ANPR Accuracy (range-based),87.10,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-03,RFID Reading Rate,9.84,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-06,AVC Detection Rate,1.64,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-07,AVC Accuracy (range-based),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-09,Axle-Counting Accuracy (range-based),88.71,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-10,Invalid Transaction Rate,4.92,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-11,WIM Detection Rate,93.44,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-01,Ultimate Success Rate,0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-02,Automated Pass Rate,11.48,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-03,Manual Processing Rate,88.52,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-04,Escalation Processing Rate,88.52,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),12756.24,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,SW-10,System Availability,99.99,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,HW-01,ANPR Detection Rate,89.29,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-02,ANPR Accuracy (range-based),85.71,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-03,RFID Reading Rate,5.26,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-06,AVC Detection Rate,97.37,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-08,Axle-Counter Detection Rate,97.37,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-09,Axle-Counting Accuracy (range-based),96.15,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-10,Invalid Transaction Rate,2.63,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-11,WIM Detection Rate,94.74,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-01,Ultimate Success Rate,55.26,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-02,Automated Pass Rate,55.26,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-03,Manual Processing Rate,44.74,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-04,Escalation Processing Rate,50.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),382.50,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-03,RFID Reading Rate,13.95,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-10,Invalid Transaction Rate,0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-11,WIM Detection Rate,88.37,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-01,Ultimate Success Rate,51.16,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-02,Automated Pass Rate,51.16,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-03,Manual Processing Rate,48.84,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-04,Escalation Processing Rate,45.61,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-08,Avg Truck Passing Time (MASAR Domain),6573.47,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_3,Batch_3,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_3,Batch_3,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,HW-01,ANPR Detection Rate,83.02,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-02,ANPR Accuracy (range-based),83.02,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-03,RFID Reading Rate,35.85,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-07,AVC Accuracy (range-based),96.23,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-09,Axle-Counting Accuracy (range-based),83.02,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-10,Invalid Transaction Rate,7.55,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-11,WIM Detection Rate,98.11,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-01,Ultimate Success Rate,90.57,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-02,Automated Pass Rate,90.57,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-03,Manual Processing Rate,9.43,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-04,Escalation Processing Rate,9.43,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),1359.57,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+11082026,Al_Zubair_Lane_3,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+11082026,Al_Zubair_Lane_3,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,48.62%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.92%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.92%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,36.70%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),35.78%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,37.61%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),37.61%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,51.38%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,69.72%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,69.72%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,1.83%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,11.01%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,88.99%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),25.102 sec,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),25.641 sec,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,85.19%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,85.19%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),81.48%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,40.74%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),40.74%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,14.81%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,92.59%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,92.59%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,14.81%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,29.63%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,70.37%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),11.000 sec,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),11.000 sec,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,96.43%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,71.43%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),71.43%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,66.07%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),66.07%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,3.57%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,91.07%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,91.07%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,42.86%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,64.29%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,35.71%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),12.964 sec,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),12.964 sec,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,95.65%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,73.91%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,4.35%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,43.48%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,43.48%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,56.52%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),12.217 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),12.217 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,100,verification_json,HIGH
+21072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,95.65217391304348,verification_json,HIGH
+21072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,95.65%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,73.91%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,100.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,4.35%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,100.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,43.48%,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,43.48%,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,56.52%,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),12.217 sec,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),12.217 sec,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+27072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+27072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,90.63%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),1.72%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,1.56%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,81.25%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),96.15%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,98.44%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,9.38%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,89.06%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,32.81%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,35.94%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,64.06%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),17.891 sec,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),17.891 sec,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+30072026,Al_Zubair_Lane_3,,HW-01,ANPR Detection Rate,77.59%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-02,ANPR Accuracy (range-based),4.47%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-03,RFID Reading Rate,4.14%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-06,AVC Detection Rate,69.50%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-07,AVC Accuracy (range-based),84.91%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-08,Axle-Counter Detection Rate,90.73%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-10,Invalid Transaction Rate,21.74%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-11,WIM Detection Rate,86.02%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-01,Ultimate Success Rate,32.92%,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-02,Automated Pass Rate,40.25%,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-03,Manual Processing Rate,59.75%,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-07,Elapsed Time at Plaza Manager (avg),61.535 sec,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-08,Avg Truck Passing Time (MASAR Domain),55.889 sec,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,SW-10,System Availability,99.9702%,input_software_csv,HIGH
+30072026,Al_Zubair_Lane_3,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+30072026,Al_Zubair_Lane_3,,CT-02,Ground_Truth_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+30072026,Al_Zubair_Lane_3,,CT-03,Database_transfer_rate_To_Central,99.94118800235248,verification_json,HIGH
+30072026,Al_Zubair_Lane_3,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+30072026,Al_Zubair_Lane_3,,CMP-01,Attachment_Compliance_Percentage,70.1863354037267,verification_json,HIGH
+30072026,Al_Zubair_Lane_3,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,HW-01,ANPR Detection Rate,81.82%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-02,ANPR Accuracy (range-based),14.81%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-03,RFID Reading Rate,12.12%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-06,AVC Detection Rate,15.15%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-07,AVC Accuracy (range-based),20.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-08,Axle-Counter Detection Rate,75.76%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-10,Invalid Transaction Rate,18.18%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-11,WIM Detection Rate,75.76%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-01,Ultimate Success Rate,3.03%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-02,Automated Pass Rate,15.15%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-03,Manual Processing Rate,84.85%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-07,Elapsed Time at Plaza Manager (avg),65.129 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-08,Avg Truck Passing Time (MASAR Domain),64.491 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_3_h,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_3_h,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,50.00%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,68.97%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),68.97%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,48.28%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),48.28%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,50.00%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,53.45%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,53.45%,input_hardware_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,18.97%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,31.03%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,68.97%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),31.385 sec,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),19.869 sec,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+01072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+01072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,83.87%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),1.94%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,1.94%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,97.42%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),97.42%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,74.19%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),74.19%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,16.13%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,89.68%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,89.68%,input_hardware_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,36.77%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,47.74%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,52.26%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),39.099 sec,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),16.385 sec,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+02072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+02072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+02072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,99.35483870967742,verification_json,HIGH
+02072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+02072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,62.98701298701299,verification_json,HIGH
+02072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,68.97%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),1.67%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,2.30%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,97.70%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,29.89%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,90.80%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,39.08%,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,40.23%,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,59.77%,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),12.184 sec,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),12.184 sec,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+03082026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+03082026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,85.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,70.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),70.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,55.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),55.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,15.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,85.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,85.00%,input_hardware_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,33.33%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,50.00%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,50.00%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),38.597 sec,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),13.967 sec,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+06072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,HW-01,ANPR Detection Rate,54.55,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-02,ANPR Accuracy (range-based),50.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-03,RFID Reading Rate,18.75,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-08,Axle-Counter Detection Rate,98.44,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-09,Axle-Counting Accuracy (range-based),54.55,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-10,Invalid Transaction Rate,20.31,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-11,WIM Detection Rate,90.63,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-01,Ultimate Success Rate,42.19,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-02,Automated Pass Rate,42.19,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-03,Manual Processing Rate,57.81,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-04,Escalation Processing Rate,57.81,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),8330.81,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,SW-10,System Availability,99.99,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,HW-01,ANPR Detection Rate,48.39,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-02,ANPR Accuracy (range-based),38.71,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-03,RFID Reading Rate,6.45,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-09,Axle-Counting Accuracy (range-based),48.39,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-10,Invalid Transaction Rate,29.03,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-11,WIM Detection Rate,93.55,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-01,Ultimate Success Rate,45.16,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-02,Automated Pass Rate,45.16,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-03,Manual Processing Rate,54.84,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-04,Escalation Processing Rate,54.84,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),7902.20,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+06082026,Al_Zubair_Lane_4,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+06082026,Al_Zubair_Lane_4,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,89.13%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),2.17%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,2.17%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,78.26%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),78.26%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,10.87%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,97.83%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,97.83%,input_hardware_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,41.30%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,54.35%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,45.65%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),13.957 sec,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),13.957 sec,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+09072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-03,RFID Reading Rate,10.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-06,AVC Detection Rate,94.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-07,AVC Accuracy (range-based),97.87,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-08,Axle-Counter Detection Rate,94.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-10,Invalid Transaction Rate,32.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-11,WIM Detection Rate,94.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-01,Ultimate Success Rate,44.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-02,Automated Pass Rate,46.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-03,Manual Processing Rate,54.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-04,Escalation Processing Rate,54.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),7781.86,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-03,RFID Reading Rate,17.86,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-10,Invalid Transaction Rate,32.14,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-11,WIM Detection Rate,89.29,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-01,Ultimate Success Rate,39.29,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-02,Automated Pass Rate,39.29,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-03,Manual Processing Rate,60.71,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-04,Escalation Processing Rate,60.71,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),8748.88,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+09082026,Al_Zubair_Lane_4,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+09082026,Al_Zubair_Lane_4,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,HW-01,ANPR Detection Rate,54.55,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-02,ANPR Accuracy (range-based),50.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-03,RFID Reading Rate,18.75,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-08,Axle-Counter Detection Rate,98.44,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-09,Axle-Counting Accuracy (range-based),54.55,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-10,Invalid Transaction Rate,20.31,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-11,WIM Detection Rate,90.63,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-01,Ultimate Success Rate,42.19,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-02,Automated Pass Rate,42.19,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-03,Manual Processing Rate,57.81,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-04,Escalation Processing Rate,57.81,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-08,Avg Truck Passing Time (MASAR Domain),8330.81,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,SW-10,System Availability,99.99,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_1,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_1,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,HW-01,ANPR Detection Rate,48.39,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-02,ANPR Accuracy (range-based),38.71,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-03,RFID Reading Rate,6.45,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-06,AVC Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-08,Axle-Counter Detection Rate,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-09,Axle-Counting Accuracy (range-based),48.39,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-10,Invalid Transaction Rate,29.03,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-11,WIM Detection Rate,93.55,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-01,Ultimate Success Rate,45.16,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-02,Automated Pass Rate,45.16,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-03,Manual Processing Rate,54.84,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-04,Escalation Processing Rate,54.84,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-08,Avg Truck Passing Time (MASAR Domain),7902.20,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_2,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_2,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,HW-01,ANPR Detection Rate,0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-02,ANPR Accuracy (range-based),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-03,RFID Reading Rate,12.20,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-06,AVC Detection Rate,97.56,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-07,AVC Accuracy (range-based),100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-08,Axle-Counter Detection Rate,97.56,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-09,Axle-Counting Accuracy (range-based),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-10,Invalid Transaction Rate,14.63,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-11,WIM Detection Rate,82.93,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,HW-12,WIM Accuracy,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-01,Ultimate Success Rate,65.85,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-02,Automated Pass Rate,65.85,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-03,Manual Processing Rate,34.15,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-04,Escalation Processing Rate,32.50,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-07,Elapsed Time at Plaza Manager (avg),0.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-08,Avg Truck Passing Time (MASAR Domain),4456.96,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,SW-10,System Availability,100.00,output_kpi_summary,HIGH
+10082026,Al_Zubair_Lane_4,Batch_3,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+10082026,Al_Zubair_Lane_4,Batch_3,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,60.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,87.20%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),87.20%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,48.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),48.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,40.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,68.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,68.00%,input_hardware_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,16.80%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,32.80%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,67.20%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),24.182 sec,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),21.281 sec,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+15072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+15072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,67.86%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),92.86%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,64.29%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),64.29%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,32.14%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,89.29%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,89.29%,input_hardware_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,25.00%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,46.43%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,53.57%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),12.607 sec,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),12.607 sec,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+18072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+18072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,58.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,88.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),88.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,52.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),52.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,42.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,78.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,78.00%,input_hardware_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,26.00%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,34.00%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,66.00%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),51.553 sec,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),49.806 sec,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+19072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+19072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,77.27%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),0.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,0.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,22.73%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,95.45%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,36.36%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,36.36%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,63.64%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),14.864 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),14.864 sec,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+21072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+21072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NOT_AVAILABLE,verification_json,HIGH
+21072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,90.9090909090909,verification_json,HIGH
+21072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,SUCCESS,verification_json,HIGH
+21072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,80,verification_json,HIGH
+21072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,HW-01,ANPR Detection Rate,65.52%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-02,ANPR Accuracy (range-based),2.63%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-03,RFID Reading Rate,3.45%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-06,AVC Detection Rate,96.55%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-07,AVC Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-08,Axle-Counter Detection Rate,94.83%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-09,Axle-Counting Accuracy (range-based),100.00%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-10,Invalid Transaction Rate,32.76%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-11,WIM Detection Rate,86.21%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,HW-12,WIM Accuracy,100.00%,input_hardware_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-01,Ultimate Success Rate,43.10%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-02,Automated Pass Rate,43.10%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-03,Manual Processing Rate,56.90%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-04,Escalation Processing Rate,0.00%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-07,Elapsed Time at Plaza Manager (avg),25.492 sec,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-08,Avg Truck Passing Time (MASAR Domain),24.547 sec,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,SW-10,System Availability,100.0000%,input_software_csv,HIGH
+28072026,Al_Zubair_Lane_4,,CT-01,Ground_Truth_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,CT-02,Ground_Truth_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,CT-03,Database_transfer_rate_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,CT-04,Database_transfer_Status_To_Central,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,CMP-01,Attachment_Compliance_Percentage,NO_DATA_AVAILABLE,none,INFO
+28072026,Al_Zubair_Lane_4,,CMP-02,Attachment_Compliance_Status,NO_DATA_AVAILABLE,none,INFO
+30072026,Al_Zubair_Lane_3,,HW-04,RFID Accuracy,0.00%,input_hardware_csv,HIGH
