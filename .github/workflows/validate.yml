@@ -1,0 +1,57 @@
+name: Validate Build & Tests
+
+on:
+  pull_request:
+    branches: ["main", "master"]
+  push:
+    branches: ["develop"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Type Check
+        run: npm run type-check
+        continue-on-error: true
+
+      - name: Build Application
+        run: npm run build
+        env:
+          CI: true
+
+      - name: Check Build Artifacts
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "❌ Build output directory 'dist' not found"
+            exit 1
+          fi
+          echo "✅ Build artifacts verified"
+          du -sh dist/
+
+      - name: Report Status
+        if: always()
+        run: |
+          echo "## Build Validation Report" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "✅ All validation checks passed!" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Some validation checks failed" >> $GITHUB_STEP_SUMMARY
+          fi

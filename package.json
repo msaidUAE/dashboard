@@ -1,8 +1,19 @@
 {
   "name": "kpis-analysis-dashboard",
-  "version": "1.0.0",
-  "description": "Professional KPI Analysis Dashboard with Advanced Filtering and Visualizations",
+  "version": "2.0.0",
+  "description": "Professional KPI Analysis Dashboard with Advanced Filtering and Visualizations - GitHub Pages Ready",
   "private": true,
+  "homepage": "https://yourusername.github.io/Professional-KPI-Analysis-Dashboard/",
+  "keywords": [
+    "kpi",
+    "dashboard",
+    "analytics",
+    "data-visualization",
+    "react",
+    "typescript"
+  ],
+  "author": "Professional Development Team",
+  "license": "Proprietary",
   "dependencies": {
     "axios": "^1.6.5",
     "chart.js": "^4.4.1",
@@ -17,15 +28,21 @@
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.1",
     "ajv": "^8.20.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "build:gh-pages": "tsc && vite build --mode github-pages",
+    "preview": "vite preview",
     "test": "react-scripts test --run",
-    "eject": "react-scripts eject"
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +58,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
