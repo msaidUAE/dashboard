@@ -97,7 +97,7 @@ If the build succeeds, you'll see a `dist/` folder with production-ready files.
 Edit `package.json` and update the `homepage` field with your actual GitHub Pages URL:
 
 ```json
-"homepage": "https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/",
+"homepage": "http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/",
 ```
 
 Replace `YOUR_USERNAME` with your actual GitHub username.
@@ -219,7 +219,7 @@ In the workflow run details:
 
 ### Step 3: Access Your Deployed Dashboard
 
-1. Navigate to: `https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/`
+1. Navigate to: `http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/`
 2. Replace `YOUR_USERNAME` with your GitHub username
 3. Verify the dashboard loads correctly
 4. Test filters and all three visualization modes

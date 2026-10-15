@@ -258,7 +258,7 @@ Your dashboard works on:
 
 Copy this link and share:
 ```
-https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/
+http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/
 ```
 
 ### 2. Add Status Badge to README

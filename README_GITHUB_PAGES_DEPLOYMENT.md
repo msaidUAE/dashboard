@@ -165,7 +165,7 @@ Step 7: Upload dist/ to GitHub Pages
 Step 8: Deploy (live in seconds)
          ↓
 🎉 Dashboard Live on GitHub Pages
-   https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/
+   http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/
 ```
 
 **Duration**: Typically 2-3 minutes

@@ -343,7 +343,7 @@ All components have been configured and delivered for GitHub Pages deployment us
 
 ```
 Step 1: Update package.json
-  "homepage": "https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/"
+  "homepage": "http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/"
 
 Step 2: Commit and push
   git add .
@@ -352,7 +352,7 @@ Step 2: Commit and push
 
 Step 3: Monitor and access
   - Check Actions tab (workflow completes in 2-3 min)
-  - Access: https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/
+  - Access: http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/
 ```
 
 **Total Time**: ~5-10 minutes (3 minutes setup + 2-3 minutes deployment + 2 minutes verification)

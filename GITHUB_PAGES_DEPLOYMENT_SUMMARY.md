@@ -91,7 +91,7 @@ rollupOptions: {
 ```json
 {
   "version": "2.0.0",
-  "homepage": "https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/",
+  "homepage": "http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -643,7 +643,7 @@ Configuration files created/updated:
 
 ```bash
 # 1. Update package.json homepage (replace YOUR_USERNAME)
-# Edit: "homepage": "https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/"
+# Edit: "homepage": "http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/"
 
 # 2. Commit and push
 git add .
@@ -653,7 +653,7 @@ git push -u origin main
 # 3. Monitor and access
 # - Go to Actions tab
 # - Wait for ✅ completion
-# - Access: https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/
+# - Access: http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/
 ```
 
 **Estimated deployment time: 5-10 minutes**

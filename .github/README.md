@@ -27,7 +27,7 @@ cd Professional-KPI-Analysis-Dashboard
 
 # Update package.json homepage URL (IMPORTANT!)
 # Edit package.json and set:
-# "homepage": "https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/"
+# "homepage": "http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/"
 
 # Install dependencies
 npm install
@@ -46,7 +46,7 @@ git push -u origin main
 - Go to GitHub repository
 - Click **Actions** tab
 - Wait for workflow to complete
-- Access dashboard at: `https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/`
+- Access dashboard at: `http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/`
 
 ---
 

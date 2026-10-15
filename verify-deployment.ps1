@@ -106,7 +106,7 @@ if ($homepageCheck -and $homepageCheck -ne "" -and $homepageCheck -like "*github
 } else {
     Write-Host "⚠️  Homepage URL not configured" -ForegroundColor Yellow
     Write-Host "   Fix: Update package.json with:" -ForegroundColor Yellow
-    Write-Host "   `"homepage`": `"https://YOUR_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/`"" -ForegroundColor Yellow
+    Write-Host "   `"homepage`": `"http://tdevopssrv1/DefaultCollection/ETC/_git/Professional-KPI-Analysis-Dashboard/`"" -ForegroundColor Yellow
     $failCount++
 }
 
