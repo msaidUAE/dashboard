@@ -30,6 +30,7 @@
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.1",
     "ajv": "^8.20.0",
+    "cross-env": "^7.0.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "vite": "^5.1.0"
@@ -37,8 +38,8 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "tsc && vite build",
-    "build:gh-pages": "tsc && vite build --mode github-pages",
+    "build": "tsc --noEmit && vite build",
+    "build:gh-pages": "cross-env GITHUB_PAGES=true vite build",
     "preview": "vite preview",
     "test": "react-scripts test --run",
     "type-check": "tsc --noEmit",
