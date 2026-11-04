@@ -6,6 +6,7 @@ import {
   aggregateRecords,
   sortDatesChronologically,
   formatDate,
+  isSecondsValue,
 } from '../../utils/dataProcessor';
 import { getLaneColor } from '../../utils/colors';
 import {
@@ -39,6 +40,7 @@ interface ByDateViewProps {
 interface Cell {
   value: number | null;
   display: string;
+  unit: 'seconds' | 'percentage' | 'status' | 'none';
 }
 
 export const ByDateView: React.FC<ByDateViewProps> = ({ data }) => {
@@ -54,6 +56,9 @@ export const ByDateView: React.FC<ByDateViewProps> = ({ data }) => {
 
   const renderKPITrendCard = (kpiTitle: string) => {
     const kpiRecords = groupedByKPI[kpiTitle];
+    const isSecondsKpi = kpiRecords.some((record) =>
+      isSecondsValue(record.Actual_Result)
+    );
 
     // Index records by lane → date.
     const byLaneDate: { [lane: string]: { [date: string]: KPIRecord[] } } = {};
@@ -138,14 +143,13 @@ export const ByDateView: React.FC<ByDateViewProps> = ({ data }) => {
       scales: {
         y: {
           beginAtZero: true,
-          max: 100,
           ticks: {
-            callback: (value: any) => `${value}%`,
+            callback: (value: any) => isSecondsKpi ? `${value} sec` : `${value}%`,
             font: { size: 11 },
           },
           title: {
             display: true,
-            text: 'Performance (%)',
+            text: isSecondsKpi ? 'Elapsed time (seconds)' : 'Performance (%)',
             font: { size: 12, weight: 'bold' as const },
           },
           grid: { color: 'rgba(148, 163, 184, 0.15)' },

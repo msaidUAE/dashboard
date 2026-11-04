@@ -109,6 +109,10 @@
   border-left: 3px solid #9e9e9e;
 }
 
+.data-table tbody tr.status-unscored {
+  border-left: 3px solid #6366f1;
+}
+
 .kpi-title {
   font-weight: 500;
   color: #2c3e50;
@@ -166,6 +170,11 @@
 .badge-no-data {
   background: #eeeeee;
   color: #616161;
+}
+
+.badge-unscored {
+  background: #e0e7ff;
+  color: #3730a3;
 }
 
 .pagination {

@@ -41,6 +41,7 @@ export enum KPIStatus {
   WARNING = 'WARNING',
   CRITICAL = 'CRITICAL',
   NO_DATA = 'NO_DATA',
+  UNSCORED = 'UNSCORED',
 }
 
 export interface LaneVisualization {

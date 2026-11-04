@@ -30,7 +30,7 @@ A sophisticated, enterprise-grade data visualization and analytics platform for 
 #### 1. **By Lane View** (Default)
 Display performance metrics across all lanes simultaneously
 - **6 vertical bar charts** - one per unique lane
-- **X-axis**: All 23 KPI indicators
+- **X-axis**: KPI indicators discovered from the current CSV
 - **Y-axis**: Performance values (0-100%)
 - Perfect for lane-to-lane performance comparison
 - Responsive and scrollable on smaller devices
@@ -78,7 +78,7 @@ Time-series analysis and trend tracking
 **Filter Dimensions**:
 1. **📅 Dates** - 10 unique dates from your CSV
 2. **🛣️ Lanes** - 6 unique lane identifiers
-3. **📊 KPI Titles** - 23 unique KPI metrics
+3. **📊 KPI Titles** - KPI titles discovered from the current CSV
 4. **📈 Result Ranges** - 6 performance categories
 
 **Result Range Categories**:
@@ -89,7 +89,11 @@ Time-series analysis and trend tracking
 - Between 50 - 70% (Poor)
 - Below 50% (Critical)
 
-### 📊 23 KPI Metrics Tracked
+### 📊 KPI Metrics Tracked
+
+The dashboard derives KPI titles from its CSV instead of fixing a metric count in the UI. The current daily snapshot catalog contains 33 IDs: 24 implemented calculations and 9 explicitly marked `N/A` until formulas are supplied.
+
+Elapsed-time results retain their seconds unit throughout the table and charts. Because this CSV does not include KPI-specific target thresholds, seconds metrics are shown neutrally and labeled **UNSCORED** rather than being presented as percentages or assigned misleading performance colors.
 
 **Hardware Category (HW)**
 - ANPR Detection Rate
@@ -161,7 +165,7 @@ Real-time metrics display showing:
 #### ✅ Real Data Integration
 - ✅ Actual CSV data properly parsed and displayed
 - ✅ Real lane values from your dataset
-- ✅ All 23 actual KPI metrics
+- ✅ KPI metrics discovered from the current CSV
 - ✅ Real date ranges (October - September 2026)
 - ✅ Actual performance data and results
 - ✅ 480+ records integrated
@@ -297,7 +301,7 @@ Perfect for comparing performance across locations.
 ┌─────────────────────────────────────────────────┐
 │ Lane: Al_Dhead_Lane_1_Daily                     │
 │ ┌───────────────────────────────────────────┐   │
-│ │ Bar Chart (23 KPIs)                       │   │
+│ │ Bar Chart (KPI count from CSV)             │   │
 │ │ X-axis: KPI Names | Y-axis: Values 0-100 │   │
 │ └───────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────┘
@@ -417,7 +421,7 @@ Filters automatically extract real values from your CSV:
 - Example: Al_Dhead_Lane_1_Daily, Al_Madam_Lane_3...
 
 **KPI Titles Filter**:
-- Automatically shows 23 unique KPI metrics
+- Automatically shows KPI titles from the CSV
 - Real metric names from your CSV
 - Example: ANPR Detection Rate, System Availability...
 
@@ -756,7 +760,7 @@ Your dashboard is ready when:
 - [x] Dashboard accessible: `http://localhost:3000`
 - [x] All 3 views working (By Lane, By KPI, By Date)
 - [x] Filters extracting real data from CSV
-- [x] All 23 KPI metrics displaying
+- [x] KPI metrics from the current CSV displaying
 - [x] All 6 lanes showing in filters
 - [x] Charts responding to filter changes
 - [x] No console errors (F12 check)

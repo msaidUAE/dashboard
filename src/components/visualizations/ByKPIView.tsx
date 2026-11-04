@@ -5,6 +5,7 @@ import {
   aggregateRecords,
   sortDatesChronologically,
   formatDate,
+  isSecondsValue,
 } from '../../utils/dataProcessor';
 import { getPerformanceColor, getContrastTextColor } from '../../utils/colors';
 import { PerformanceLegend } from '../PerformanceLegend';
@@ -66,9 +67,10 @@ export const ByKPIView: React.FC<ByKPIViewProps> = ({ data }) => {
               </div>
               {dates.map((date) => {
                 const records = byLaneDate[lane]?.[date] ?? [];
-                const { value, display } = aggregateRecords(records);
-                const bg = getPerformanceColor(value);
-                const fg = getContrastTextColor(value);
+                const { value, display, unit } = aggregateRecords(records);
+                const isUnscored = unit === 'seconds';
+                const bg = getPerformanceColor(value, isUnscored);
+                const fg = getContrastTextColor(value, isUnscored);
 
                 return (
                   <div
@@ -97,7 +99,7 @@ export const ByKPIView: React.FC<ByKPIViewProps> = ({ data }) => {
         </p>
       </div>
 
-      <PerformanceLegend />
+      <PerformanceLegend showUnscored={data.some((record) => isSecondsValue(record.Actual_Result))} />
 
       <div className="heatmaps-grid">{kpiTitles.map((kpiTitle) => renderHeatmap(kpiTitle))}</div>
     </div>

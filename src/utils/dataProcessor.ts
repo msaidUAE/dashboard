@@ -102,9 +102,12 @@ export const isNoData = (value: string): boolean => {
   );
 };
 
+/** Detect numeric results explicitly reported in seconds. */
+export const isSecondsValue = (value: string): boolean =>
+  /^\s*[-+]?(?:(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d*)?|\.\d+)\s*(?:s|sec(?:onds)?)\s*$/i.test(value);
+
 /**
- * Parse numeric value from a result string into a normalized 0-100 score.
- * Handles percentages, seconds, unit-less values, and status strings.
+ * Parse the numeric portion of a result while preserving elapsed seconds.
  */
 export const parseNumericValue = (value: string): number => {
   if (isNoData(value)) {
@@ -119,9 +122,10 @@ export const parseNumericValue = (value: string): number => {
   }
 
   // Remove common suffixes and thousands separators.
-  let cleanValue = trimmed
+  const isSeconds = isSecondsValue(trimmed);
+  const cleanValue = trimmed
     .replace(/%/g, '')
-    .replace(/sec(onds)?/gi, '')
+    .replace(/(?:seconds?|sec|s)\s*$/i, '')
     .replace(/,/g, '')
     .trim();
 
@@ -131,12 +135,12 @@ export const parseNumericValue = (value: string): number => {
     return 0;
   }
 
-  // Ensure values are within 0-100.
-  if (num > 100) {
+  // Percent-style metrics use a 0-100 scale; elapsed time does not.
+  if (!isSeconds && num > 100) {
     return 100;
   }
 
-  if (num < 0) {
+  if (!isSeconds && num < 0) {
     return 0;
   }
 
@@ -161,11 +165,11 @@ export const formatResultValue = (value: string): string => {
   const trimmed = value.trim();
   if (trimmed.toUpperCase() === 'SUCCESS') return 'SUCCESS';
 
-  const hasSeconds = /sec(onds)?/i.test(trimmed);
+  const hasSeconds = isSecondsValue(trimmed);
 
   const clean = trimmed
     .replace(/%/g, '')
-    .replace(/sec(onds)?/gi, '')
+    .replace(/(?:seconds?|sec|s)\s*$/i, '')
     .replace(/,/g, '')
     .trim();
   const num = parseFloat(clean);
@@ -184,11 +188,11 @@ export const formatResultValue = (value: string): string => {
  */
 export const aggregateRecords = (
   records: KPIRecord[]
-): { value: number | null; display: string } => {
+): { value: number | null; display: string; unit: 'seconds' | 'percentage' | 'status' | 'none' } => {
   const valid = records.filter((r) => !isNoData(r.Actual_Result));
 
   if (valid.length === 0) {
-    return { value: null, display: 'N/A' };
+    return { value: null, display: 'N/A', unit: 'none' };
   }
 
   const sum = valid.reduce(
@@ -199,19 +203,23 @@ export const aggregateRecords = (
 
   // Pick a representative unit from the first valid record.
   const sample = valid[0].Actual_Result;
-  const hasSeconds = /sec(onds)?/i.test(sample);
+  const hasSeconds = isSecondsValue(sample);
   const isSuccess = sample.trim().toUpperCase() === 'SUCCESS';
 
   let display: string;
+  let unit: 'seconds' | 'percentage' | 'status';
   if (isSuccess) {
     display = 'SUCCESS';
+    unit = 'status';
   } else if (hasSeconds) {
     display = `${formatNumber(average)} sec`;
+    unit = 'seconds';
   } else {
     display = `${formatNumber(average)}%`;
+    unit = 'percentage';
   }
 
-  return { value: average, display };
+  return { value: average, display, unit };
 };
 
 /**
@@ -219,6 +227,7 @@ export const aggregateRecords = (
  */
 export const getResultRange = (value: string): string => {
   if (isNoData(value)) return 'NO_DATA';
+  if (isSecondsValue(value)) return 'NOT_APPLICABLE';
 
   const num = parseNumericValue(value);
   if (num >= 95) return '95-100%';
@@ -235,6 +244,9 @@ export const getResultRange = (value: string): string => {
 export const determineStatus = (actualResult: string): KPIStatus => {
   if (isNoData(actualResult)) {
     return KPIStatus.NO_DATA;
+  }
+  if (isSecondsValue(actualResult)) {
+    return KPIStatus.UNSCORED;
   }
 
   const numValue = parseNumericValue(actualResult);

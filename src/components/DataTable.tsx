@@ -23,6 +23,7 @@ export const DataTable: React.FC<DataTableProps> = ({ data, maxRows = 20 }) => {
       [KPIStatus.WARNING]: 'badge-warning',
       [KPIStatus.CRITICAL]: 'badge-critical',
       [KPIStatus.NO_DATA]: 'badge-no-data',
+      [KPIStatus.UNSCORED]: 'badge-unscored',
     };
     return statusColors[status];
   };

@@ -41,7 +41,7 @@
     "build": "tsc --noEmit && vite build",
     "build:gh-pages": "cross-env GITHUB_PAGES=true vite build",
     "preview": "vite preview",
-    "test": "react-scripts test --run",
+    "test": "react-scripts test --watchAll=false --runInBand",
     "type-check": "tsc --noEmit",
     "lint": "tsc --noEmit"
   },

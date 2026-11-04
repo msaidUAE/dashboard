@@ -1,10 +1,12 @@
 import React from 'react';
-import { PERFORMANCE_LEGEND, NO_DATA_COLOR } from '../utils/colors';
+import { PERFORMANCE_LEGEND, NO_DATA_COLOR, UNSCORED_COLOR } from '../utils/colors';
 
 /**
  * Shared color legend for performance (percentage) visualizations.
  */
-export const PerformanceLegend: React.FC = () => {
+export const PerformanceLegend: React.FC<{ showUnscored?: boolean }> = ({
+  showUnscored = false,
+}) => {
   return (
     <div className="perf-legend">
       {PERFORMANCE_LEGEND.map((item) => (
@@ -23,6 +25,15 @@ export const PerformanceLegend: React.FC = () => {
         />
         <span>No Data</span>
       </div>
+      {showUnscored && (
+        <div className="perf-legend-item">
+          <span
+            className="perf-legend-swatch"
+            style={{ backgroundColor: UNSCORED_COLOR }}
+          />
+          <span>Seconds (unscored)</span>
+        </div>
+      )}
     </div>
   );
 };

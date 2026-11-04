@@ -41,11 +41,13 @@ export const PERFORMANCE_LEGEND: { label: string; color: string; min: number; ma
 
 /** Grey used for "no data" cells. */
 export const NO_DATA_COLOR = '#e5e7eb';
+export const UNSCORED_COLOR = '#e0e7ff';
 
 /**
  * Map a 0-100 value (or null for "no data") to a performance color.
  */
-export const getPerformanceColor = (value: number | null): string => {
+export const getPerformanceColor = (value: number | null, isUnscored = false): string => {
+  if (isUnscored) return UNSCORED_COLOR;
   if (value === null) return NO_DATA_COLOR;
 
   if (value >= 95) return '#0b7a3b';
@@ -60,7 +62,8 @@ export const getPerformanceColor = (value: number | null): string => {
  * Return readable text color for a given background performance color,
  * so cell text stays legible on light vs dark backgrounds.
  */
-export const getContrastTextColor = (value: number | null): string => {
+export const getContrastTextColor = (value: number | null, isUnscored = false): string => {
+  if (isUnscored) return '#3730a3';
   if (value === null) return '#6b7280';
   if (value >= 80) return '#ffffff';
   if (value >= 50) return '#1f2937';

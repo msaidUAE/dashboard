@@ -33,7 +33,13 @@ const App: React.FC = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch('/Input/complete_KPIs_Analysis.csv');
+        const response = await fetch(
+          `${import.meta.env.BASE_URL}Input/complete_KPIs_Analysis.csv`,
+          { cache: 'no-cache' }
+        );
+        if (!response.ok) {
+          throw new Error(`KPI data request failed: HTTP ${response.status}`);
+        }
         const csvContent = await response.text();
         const parsedData = parseCSV(csvContent);
         setAllData(parsedData);

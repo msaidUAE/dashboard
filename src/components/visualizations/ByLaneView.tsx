@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { KPIRecord } from '../../types';
-import { groupByLane, aggregateRecords } from '../../utils/dataProcessor';
+import { groupByLane, aggregateRecords, isSecondsValue } from '../../utils/dataProcessor';
 import { getPerformanceColor } from '../../utils/colors';
 import { PerformanceLegend } from '../PerformanceLegend';
 import {
@@ -24,6 +24,7 @@ interface ByLaneViewProps {
 interface BarEntry {
   value: number | null;
   display: string;
+  unit: 'seconds' | 'percentage' | 'status' | 'none';
 }
 
 export const ByLaneView: React.FC<ByLaneViewProps> = ({ data }) => {
@@ -36,6 +37,9 @@ export const ByLaneView: React.FC<ByLaneViewProps> = ({ data }) => {
 
   const renderLaneChart = (lane: string) => {
     const laneRecords = groupedByLane[lane];
+    const hasSeconds = laneRecords.some((record) =>
+      isSecondsValue(record.Actual_Result)
+    );
 
     const entries: BarEntry[] = kpiTitles.map((kpiTitle) => {
       const kpiRecords = laneRecords.filter((r) => r.KPI_Title === kpiTitle);
@@ -46,15 +50,38 @@ export const ByLaneView: React.FC<ByLaneViewProps> = ({ data }) => {
       labels: kpiTitles,
       datasets: [
         {
-          label: 'Performance',
-          data: entries.map((e) => (e.value === null ? 0 : e.value)),
-          backgroundColor: entries.map((e) => getPerformanceColor(e.value)),
+          label: 'Performance (%)',
+          data: entries.map((entry) =>
+            entry.unit === 'seconds' ? null : entry.value
+          ),
+          backgroundColor: entries.map((e) =>
+            getPerformanceColor(e.value)
+          ),
           borderColor: entries.map((e) =>
-            e.value === null ? '#cbd5e1' : getPerformanceColor(e.value)
+            e.value === null
+              ? '#cbd5e1'
+              : getPerformanceColor(e.value)
           ),
           borderWidth: 1,
           borderRadius: 4,
           maxBarThickness: 28,
+          yAxisID: 'y',
+        },
+        {
+          label: 'Elapsed time (seconds)',
+          data: entries.map((entry) =>
+            entry.unit === 'seconds' ? entry.value : null
+          ),
+          backgroundColor: entries.map((entry) =>
+            getPerformanceColor(entry.value, entry.unit === 'seconds')
+          ),
+          borderColor: entries.map((entry) =>
+            entry.unit === 'seconds' ? getPerformanceColor(entry.value, true) : '#cbd5e1'
+          ),
+          borderWidth: 1,
+          borderRadius: 4,
+          maxBarThickness: 28,
+          yAxisID: 'ySeconds',
         },
       ],
     };
@@ -96,10 +123,25 @@ export const ByLaneView: React.FC<ByLaneViewProps> = ({ data }) => {
           },
           title: {
             display: true,
-            text: 'Actual Result (%)',
+            text: 'Performance (%)',
             font: { size: 12, weight: 'bold' as const },
           },
           grid: { color: 'rgba(148, 163, 184, 0.15)' },
+        },
+        ySeconds: {
+          beginAtZero: true,
+          display: hasSeconds,
+          position: 'right' as const,
+          ticks: {
+            callback: (value: any) => `${value}s`,
+            font: { size: 11 },
+          },
+          title: {
+            display: hasSeconds,
+            text: 'Elapsed time (seconds)',
+            font: { size: 12, weight: 'bold' as const },
+          },
+          grid: { drawOnChartArea: false },
         },
         x: {
           ticks: {
@@ -131,7 +173,7 @@ export const ByLaneView: React.FC<ByLaneViewProps> = ({ data }) => {
         </p>
       </div>
 
-      <PerformanceLegend />
+      <PerformanceLegend showUnscored={data.some((record) => isSecondsValue(record.Actual_Result))} />
 
       <div className="charts-container">{lanes.map((lane) => renderLaneChart(lane))}</div>
     </div>
