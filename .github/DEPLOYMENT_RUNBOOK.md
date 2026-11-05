@@ -1,110 +1,39 @@
-# 🚀 Deployment Runbook
+# Company LAN Deployment Runbook
 
-Quick reference guide for deploying Professional KPI Analysis Dashboard.
+The dashboard is intended for access on the company network, not public hosting.
 
----
+## Build and start
 
-## Prerequisites Checklist
+From `Professional-KPI-Analysis-Dashboard`:
 
-```bash
-✓ Node.js v18+ installed
-✓ npm v9+ installed
-✓ Git configured
-✓ Repository cloned locally
-✓ All changes committed
+```powershell
+npm ci
+npm run deploy:lan
 ```
 
----
+The command builds the static site and starts its HTTP server on `0.0.0.0:4173`. Keep the terminal and host computer running. The dashboard home page is `http://192.168.6.115:4173/`; its health check is `http://192.168.6.115:4173/healthz`.
 
-## Quick Deployment Steps
+## Windows Firewall
 
-### 1. Verify Local Build (5 min)
+On the host, run PowerShell as Administrator and allow the server only from the local subnet on the Private profile:
 
-```bash
-# Navigate to project
-cd "Professional-KPI-Analysis-Dashboard"
+```powershell
+New-NetFirewallRule -DisplayName "KPI Dashboard (Company LAN)" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 4173 -Profile Private -RemoteAddress LocalSubnet
+```
 
-# Install dependencies
-npm install
+Verify the host has the expected IPv4 address and test the dashboard from a second device on the company network. Reserve the host address in DHCP if it is dynamically assigned.
 
-# Build locally
+## Teams alert link
+
+The **View Dashboard** alert action defaults to `http://192.168.6.115:4173/`. To override it, set `KPI_DASHBOARD_URL` in the environment that starts the automation supervisor.
+
+## Security and existing GitHub Pages site
+
+The LAN server has no user authentication or TLS. It is not intended for public internet exposure; do not configure port forwarding. The GitHub Pages deployment workflow has been removed to prevent future automatic public deployments. This code change does not remove a site that may already be published: disable GitHub Pages in the repository settings and remove any existing public site/data there if internal-only access is required.
+
+## Verification
+
+```powershell
 npm run build
-
-# Verify dist folder created
-ls dist/
+npm run test:lan-server
 ```
-
-### 2. Update Homepage (1 min)
-
-Edit `package.json`:
-```json
-"homepage": "https://YOUR_GITHUB_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/"
-```
-
-### 3. Push to GitHub (2 min)
-
-```bash
-git add .
-git commit -m "feat: github pages deployment ready"
-git push -u origin main
-```
-
-### 4. Monitor Deployment (3 min)
-
-- Go to GitHub repository
-- Click **Actions** tab
-- Wait for "Deploy to GitHub Pages" workflow to complete
-- Check for ✅ status
-
-### 5. Access Dashboard (1 min)
-
-Navigate to:
-```
-https://YOUR_GITHUB_USERNAME.github.io/Professional-KPI-Analysis-Dashboard/
-```
-
----
-
-## Common Commands
-
-| Task | Command |
-|------|---------|
-| Test build locally | `npm run build` |
-| Preview build | `npm run preview` |
-| Check types | `npm run type-check` |
-| Install deps | `npm install` |
-| Clean & reinstall | `rm -rf node_modules && npm install` |
-
----
-
-## Troubleshooting
-
-| Issue | Fix |
-|-------|-----|
-| Build fails locally | Run `npm install` then `npm run build` |
-| 404 after deploy | Check GitHub Pages settings (must be "GitHub Actions") |
-| Blank page | Hard refresh: `Ctrl+Shift+R` or clear cache |
-| Old version showing | Wait 5 mins for cache expiration |
-
----
-
-## Rollback Procedure
-
-```bash
-# Find previous commit
-git log --oneline
-
-# Checkout previous version
-git checkout COMMIT_HASH
-
-# Push rollback
-git push -f origin main
-```
-
----
-
-## Support Resources
-
-- **Full Guide**: See `GITHUB_PAGES_DEPLOYMENT.md`
-- **Documentation**: https://docs.github.com/en/pages
-- **Status**: Check Actions tab in GitHub

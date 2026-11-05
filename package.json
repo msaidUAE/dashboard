@@ -1,9 +1,8 @@
 {
   "name": "kpis-analysis-dashboard",
   "version": "2.0.0",
-  "description": "Professional KPI Analysis Dashboard with Advanced Filtering and Visualizations - GitHub Pages Ready",
+  "description": "Professional KPI Analysis Dashboard for company LAN deployment",
   "private": true,
-  "homepage": "https://yourusername.github.io/Professional-KPI-Analysis-Dashboard/",
   "keywords": [
     "kpi",
     "dashboard",
@@ -39,7 +38,9 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsc --noEmit && vite build",
-    "build:gh-pages": "cross-env GITHUB_PAGES=true vite build",
+    "serve:lan": "node scripts/serve-dashboard.js",
+    "deploy:lan": "npm run build && npm run serve:lan",
+    "test:lan-server": "node --test scripts/serve-dashboard.test.js",
     "preview": "vite preview",
     "test": "react-scripts test --watchAll=false --runInBand",
     "type-check": "tsc --noEmit",

@@ -1788,44 +1788,44 @@ Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence
 05112026,Al_Zubair_Lane_4,Production daily snapshot,SW-13,Plaza Processing Time,N/A,MASAR API - Production,NO_TRANSACTIONS
 05112026,Al_Zubair_Lane_4,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),N/A,MASAR API - Production,NO_TRANSACTIONS
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-01,ANPR Detection Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-03,RFID Reading Rate,64.21%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-06,AVC Detection Rate,99.52%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.84%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,96.31%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-03,RFID Reading Rate,64.48%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-06,AVC Detection Rate,99.55%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.85%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,96.57%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-09,Axle-Counting Accuracy (proxy),N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-00,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-11,WIM Detection Rate,96.23%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-11,WIM Detection Rate,96.43%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,HW-12,WIM Accuracy (Range Based),100.00%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,KPI-D-11,Device Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,60.27%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-02,Automated Pass Rate,62.76%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-03,Manual Processing Rate,37.24%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,7.94s,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),7.94s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,60.76%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-02,Automated Pass Rate,63.07%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-03,Manual Processing Rate,36.93%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,8.00s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),8.00s,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-06,System Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-07,Complete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-08,Incomplete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-09,Identification Success Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-10,Classification Success Rate,95.83%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-10,Classification Success Rate,96.13%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-11,Processing Success Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-12,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-13,Plaza Processing Time,7.94s,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),99.44%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-13,Plaza Processing Time,8.00s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_1_Daily,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),99.48%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-01,ANPR Detection Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-03,RFID Reading Rate,59.98%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-06,AVC Detection Rate,99.60%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.80%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.01%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-03,RFID Reading Rate,60.35%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-06,AVC Detection Rate,99.64%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.82%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.00%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-09,Axle-Counting Accuracy (proxy),N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-00,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-11,WIM Detection Rate,92.29%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-11,WIM Detection Rate,92.34%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,HW-12,WIM Accuracy (Range Based),100.00%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,KPI-D-11,Device Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,63.83%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-02,Automated Pass Rate,64.53%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-03,Manual Processing Rate,35.47%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,8.83s,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),8.83s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,64.18%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-02,Automated Pass Rate,64.81%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-03,Manual Processing Rate,35.19%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,8.92s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),8.92s,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-06,System Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-07,Complete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-08,Incomplete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
@@ -1833,53 +1833,53 @@ Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-10,Classification Success Rate,98.81%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-11,Processing Success Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-12,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-13,Plaza Processing Time,8.83s,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),99.51%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-13,Plaza Processing Time,8.92s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_2_Daily,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),99.54%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-01,ANPR Detection Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-03,RFID Reading Rate,38.56%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-03,RFID Reading Rate,38.08%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-06,AVC Detection Rate,100.00%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-07,AVC Accuracy (Range Based),100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.27%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.12%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-09,Axle-Counting Accuracy (proxy),N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-00,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-11,WIM Detection Rate,88.69%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-11,WIM Detection Rate,88.85%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,HW-12,WIM Accuracy (Range Based),100.00%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,KPI-D-11,Device Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,38.81%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-02,Automated Pass Rate,38.81%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-03,Manual Processing Rate,61.19%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,10.12s,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),10.12s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-01,Ultimate Success Rate,38.85%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-02,Automated Pass Rate,38.85%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-03,Manual Processing Rate,61.15%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,10.25s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),10.25s,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-06,System Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-07,Complete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-08,Incomplete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-09,Identification Success Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-10,Classification Success Rate,99.27%,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-10,Classification Success Rate,99.12%,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-11,Processing Success Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-12,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-13,Plaza Processing Time,10.12s,MASAR API - Production,HIGH
+05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-13,Plaza Processing Time,10.25s,MASAR API - Production,HIGH
 05112026,Al_Dhead_Lane_3_Daily,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),100.00%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,HW-01,ANPR Detection Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,HW-03,RFID Reading Rate,50.91%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,HW-03,RFID Reading Rate,51.27%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,HW-06,AVC Detection Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.80%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.66%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,HW-07,AVC Accuracy (Range Based),99.65%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,HW-08,Axle-Counter Detection Rate,99.71%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,HW-09,Axle-Counting Accuracy (proxy),N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-00,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Madam_Lane_3,Production daily snapshot,HW-11,WIM Detection Rate,74.85%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,HW-11,WIM Detection Rate,74.34%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,HW-12,WIM Accuracy (Range Based),100.00%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,KPI-D-11,Device Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-01,Ultimate Success Rate,66.42%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-02,Automated Pass Rate,66.62%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-03,Manual Processing Rate,33.38%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,11.36s,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),11.36s,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-01,Ultimate Success Rate,67.26%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-02,Automated Pass Rate,67.43%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-03,Manual Processing Rate,32.57%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-04,Overall Elapsed Time at Plaza Manager,11.29s,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-05,Avg Truck Passing Time (MASAR Domain),11.29s,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-06,System Availability,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-07,Complete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-08,Incomplete Transaction Not Sent to Central,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-09,Identification Success Rate,100.00%,MASAR API - Production,HIGH
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-10,Classification Success Rate,99.60%,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-10,Classification Success Rate,99.59%,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-11,Processing Success Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-12,Invalid Transaction Rate,N/A,MASAR API - Production,MISSING_SOURCE_DATA
-05112026,Al_Madam_Lane_3,Production daily snapshot,SW-13,Plaza Processing Time,11.36s,MASAR API - Production,HIGH
+05112026,Al_Madam_Lane_3,Production daily snapshot,SW-13,Plaza Processing Time,11.29s,MASAR API - Production,HIGH
 05112026,Al_Madam_Lane_3,Production daily snapshot,SW-14,Data Quality Matrix (ID × Classification),100.00%,MASAR API - Production,HIGH

@@ -6,9 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   root: process.cwd(),
-  base: process.env.GITHUB_PAGES === 'true' 
-    ? '/Professional-KPI-Analysis-Dashboard/' 
-    : '/',
+  base: '/',
   server: {
     port: 3000,
     open: true,

@@ -1,6 +1,8 @@
 # GitHub Actions & Pages Configuration
 
-This directory contains GitHub-specific configuration for CI/CD and GitHub Pages deployment.
+This directory contains build validation configuration and historical GitHub workflow documentation.
+
+> **Internal hosting:** The dashboard is intended to be hosted on the company LAN. The automatic GitHub Pages deployment workflow has been removed. See [DEPLOYMENT_RUNBOOK.md](./DEPLOYMENT_RUNBOOK.md) for LAN deployment steps. Removing the workflow does not unpublish an already deployed GitHub Pages site; disable Pages in repository settings if internal-only access is required.
 
 ---
 

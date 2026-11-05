@@ -6,6 +6,35 @@ A sophisticated, enterprise-grade data visualization and analytics platform for 
 
 ---
 
+## Company LAN Deployment
+
+The dashboard can be hosted on the automation computer and accessed by users on the company network. The production static server binds to all network interfaces and defaults to port `4173`; the Teams alert's **View Dashboard** action opens:
+
+```text
+http://192.168.6.115:4173/
+```
+
+From this directory, build and start the server in a terminal that remains open:
+
+```powershell
+npm ci
+npm run deploy:lan
+```
+
+After startup, verify `http://192.168.6.115:4173/healthz` returns `{"status":"ok"}` and open the dashboard home page from another company-network device. The host computer must remain powered on and connected. If this IP is assigned dynamically, reserve it for the host in DHCP or update `KPI_DASHBOARD_URL` to the host's current address.
+
+Allow inbound TCP port `4173` on the Windows **Private** firewall profile for the local subnet (run PowerShell as Administrator):
+
+```powershell
+New-NetFirewallRule -DisplayName "KPI Dashboard (Company LAN)" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 4173 -Profile Private -RemoteAddress LocalSubnet
+```
+
+This server is intended for the trusted company LAN; it provides no authentication or TLS. Do not expose the port to the public internet. If a different internal URL is required for Teams, set `KPI_DASHBOARD_URL` in the environment used to launch the automation supervisor. The server reads `public/Input/complete_KPIs_Analysis.csv` directly on each request, so automation's daily CSV replacement becomes available without rebuilding or restarting the site. The CSV is served without caching, and an open dashboard refreshes every five minutes and when the browser tab becomes visible.
+
+Use `npm run build` to build without starting the server, `npm run serve:lan` to serve an existing build, and `npm run test:lan-server` to run the static-server tests.
+
+---
+
 ## 📋 Table of Contents
 
 - [Features](#-features)

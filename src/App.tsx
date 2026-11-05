@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { KPIRecord, FilterState, DashboardStats as DashboardStatsType } from './types';
 import { FilterPanel } from './components/FilterPanel';
 import { DashboardVisualization } from './components/DashboardVisualization';
@@ -12,6 +12,7 @@ import {
 import './styles/App.css';
 
 const App: React.FC = () => {
+  const refreshIntervalMs = 5 * 60 * 1000;
   const [allData, setAllData] = useState<KPIRecord[]>([]);
   const [filteredData, setFilteredData] = useState<KPIRecord[]>([]);
   const [filters, setFilters] = useState<Partial<FilterState>>({
@@ -28,47 +29,65 @@ const App: React.FC = () => {
   });
   const [stats, setStats] = useState<DashboardStatsType | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
-  // Load CSV data
+  // Reload the published daily snapshot so open dashboard pages stay current.
+  const loadData = useCallback(async () => {
+    try {
+      const response = await fetch(
+        `${import.meta.env.BASE_URL}Input/complete_KPIs_Analysis.csv`,
+        { cache: 'no-store' }
+      );
+      if (!response.ok) {
+        throw new Error(`KPI data request failed: HTTP ${response.status}`);
+      }
+      const csvContent = await response.text();
+      const parsedData = parseCSV(csvContent);
+      setAllData(parsedData);
+      setFilteredData(parsedData);
+      setFilterOptions(extractFilterOptions(parsedData));
+      setLastUpdated(new Date());
+
+      if (parsedData.length > 0) {
+        const dates = sortDatesChronologically(parsedData.map(r => r.Date));
+        setStats({
+          totalRecords: parsedData.length,
+          uniqueLanes: new Set(parsedData.map(r => r.Lane)).size,
+          uniqueKPIs: new Set(parsedData.map(r => r.KPI_ID)).size,
+          dateRange: {
+            start: dates[0],
+            end: dates[dates.length - 1],
+          },
+        });
+      } else {
+        setStats(null);
+      }
+    } catch (error) {
+      console.error('Error loading data:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const response = await fetch(
-          `${import.meta.env.BASE_URL}Input/complete_KPIs_Analysis.csv`,
-          { cache: 'no-cache' }
-        );
-        if (!response.ok) {
-          throw new Error(`KPI data request failed: HTTP ${response.status}`);
-        }
-        const csvContent = await response.text();
-        const parsedData = parseCSV(csvContent);
-        setAllData(parsedData);
-        setFilteredData(parsedData);
-        setFilterOptions(extractFilterOptions(parsedData));
-
-        // Calculate initial stats
-        if (parsedData.length > 0) {
-          const dates = sortDatesChronologically(parsedData.map(r => r.Date));
-          setStats({
-            totalRecords: parsedData.length,
-            uniqueLanes: new Set(parsedData.map(r => r.Lane)).size,
-            uniqueKPIs: new Set(parsedData.map(r => r.KPI_ID)).size,
-            dateRange: {
-              start: dates[0],
-              end: dates[dates.length - 1],
-            },
-          });
-        }
-
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error loading data:', error);
-        setIsLoading(false);
+    void loadData();
+    const intervalId = window.setInterval(() => {
+      if (document.visibilityState === 'visible') {
+        void loadData();
+      }
+    }, refreshIntervalMs);
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        void loadData();
       }
     };
 
-    loadData();
-  }, []);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => {
+      window.clearInterval(intervalId);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [loadData, refreshIntervalMs]);
 
   // Apply filters
   useEffect(() => {
@@ -85,7 +104,10 @@ const App: React.FC = () => {
       <header className="app-header">
         <div className="header-content">
           <h1>🎯 Professional KPI Analysis Dashboard</h1>
-          <p className="subtitle">Real-time Data Visualization & Performance Analytics</p>
+          <p className="subtitle">
+            KPI Data Visualization & Performance Analytics
+            {lastUpdated && ` • Updated ${lastUpdated.toLocaleString()} • Refreshes every 5 minutes`}
+          </p>
         </div>
       </header>
 
