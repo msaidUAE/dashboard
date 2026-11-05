@@ -1,36 +1,36 @@
 .chart-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 1.5rem;
+  gap: var(--spacing-6);
   animation: fadeIn 0.5s ease;
 }
 
 .chart-container {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--card-padding-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base-ease);
   display: flex;
   flex-direction: column;
 }
 
 .chart-container:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-xl);
   transform: translateY(-4px);
 }
 
 .chart-header {
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #f0f0f0;
-  padding-bottom: 1rem;
+  margin-bottom: var(--spacing-4);
+  border-bottom: 2px solid var(--color-border-light);
+  padding-bottom: var(--spacing-4);
 }
 
 .chart-header h3 {
-  font-size: 1.2rem;
-  color: #2c3e50;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
   margin: 0;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .chart-wrapper {
@@ -52,22 +52,22 @@
   align-items: center;
   justify-content: center;
   min-height: 400px;
-  gap: 1rem;
+  gap: var(--spacing-4);
   flex-direction: column;
 }
 
 .spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #667eea;
-  border-radius: 50%;
+  border: 4px solid var(--color-border-light);
+  border-top: 4px solid var(--color-primary-600);
+  border-radius: var(--radius-full);
   animation: spin 1s linear infinite;
 }
 
 .chart-grid.loading p {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
   margin: 0;
 }
 
@@ -76,14 +76,14 @@
   align-items: center;
   justify-content: center;
   min-height: 400px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
 }
 
 .chart-grid.empty p {
-  font-size: 1.2rem;
-  color: #999;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-tertiary);
   margin: 0;
   text-align: center;
 }
@@ -101,11 +101,11 @@
   }
 
   .chart-container {
-    padding: 1rem;
+    padding: var(--card-padding-md);
   }
 
   .chart-header h3 {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
   }
 
   .chart-wrapper {
@@ -115,12 +115,12 @@
 
 @media (max-width: 480px) {
   .chart-container {
-    padding: 0.75rem;
+    padding: var(--card-padding-sm);
   }
 
   .chart-header {
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.75rem;
+    margin-bottom: var(--spacing-3);
+    padding-bottom: var(--spacing-3);
   }
 
   .chart-wrapper {

@@ -1,44 +1,44 @@
 .by-date-view {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--spacing-6);
 }
 
 .view-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  background: var(--gradient-primary);
+  color: var(--color-text-inverse);
+  padding: var(--card-padding-lg);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 12px rgba(88, 103, 221, 0.2);
 }
 
 .view-header h2 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 var(--spacing-2) 0;
   font-size: 1.8rem;
 }
 
 .view-description {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: var(--font-size-sm);
   opacity: 0.95;
 }
 
 .trends-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--spacing-6);
 }
 
 .trend-card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--card-padding-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base-ease);
 }
 
 .trend-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-xl);
   transform: translateY(-2px);
 }
 
@@ -64,11 +64,11 @@
 
 @media (max-width: 768px) {
   .by-date-view {
-    gap: 1rem;
+    gap: var(--spacing-4);
   }
 
   .view-header {
-    padding: 1rem;
+    padding: var(--card-padding-md);
   }
 
   .view-header h2 {
@@ -76,7 +76,7 @@
   }
 
   .trend-card {
-    padding: 1rem;
+    padding: var(--card-padding-md);
   }
 
   .chart-wrapper {
@@ -94,6 +94,6 @@
   }
 
   .trend-card {
-    padding: 0.75rem;
+    padding: var(--card-padding-sm);
   }
 }

@@ -1,3 +1,6 @@
+/* Import Design Tokens */
+@import './design-tokens.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,29 +12,34 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-family-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--gradient-primary);
   min-height: 100vh;
-  color: #333;
+  color: var(--color-text-primary);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-1) var(--spacing-2);
 }
 
 button {
   cursor: pointer;
   border: none;
-  font-family: inherit;
-  transition: all 0.3s ease;
+  font-family: var(--font-family-primary);
+  transition: all var(--transition-base) var(--ease-in-out);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-medium);
 }
 
 input[type='checkbox'] {
   cursor: pointer;
-  accent-color: #1976d2;
+  accent-color: var(--color-primary-600);
 }
 
 /* Scrollbar styling */
@@ -41,23 +49,23 @@ input[type='checkbox'] {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--color-bg-secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background: var(--color-text-tertiary);
+  border-radius: var(--radius-md);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--color-text-secondary);
 }
 
 /* Animation keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(var(--spacing-2));
   }
   to {
     opacity: 1;
@@ -68,7 +76,7 @@ input[type='checkbox'] {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(calc(var(--spacing-4) * -1));
   }
   to {
     opacity: 1;
@@ -87,51 +95,51 @@ input[type='checkbox'] {
 
 /* Utility classes */
 .fade-in {
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn var(--transition-base) var(--ease-out);
 }
 
 .slide-in {
-  animation: slideIn 0.5s ease;
+  animation: slideIn var(--transition-base) var(--ease-out);
 }
 
 /* Performance legend (shared by By Lane and By KPI views) */
 .perf-legend {
   display: flex;
-  gap: 1.25rem;
+  gap: var(--spacing-5);
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0.9rem 1rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: var(--card-padding-md);
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .perf-legend-item {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #334155;
+  gap: var(--spacing-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
 }
 
 .perf-legend-swatch {
   width: 16px;
   height: 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-light);
   display: inline-block;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 12px;
+    font-size: var(--font-size-xs);
   }
 }
