@@ -3,11 +3,15 @@ import { KPIRecord, KPIStatus } from '../types';
 import {
   aggregateRecords,
   determineStatus,
+  extractFilterOptions,
+  filterData,
   formatResultValue,
+  groupByKPITitle,
   getResultRange,
   isSecondsValue,
   parseNumericValue,
 } from './dataProcessor';
+import { createKPICategoryChart } from './chartHelper';
 
 const record = (Actual_Result: string): KPIRecord => ({
   Date: '04112026',
@@ -35,6 +39,33 @@ describe('elapsed-time KPI handling', () => {
       value: 130,
       display: '130 sec',
       unit: 'seconds',
+    });
+  });
+
+  describe('SQL-aligned KPI identity', () => {
+    const duplicateTitles: KPIRecord[] = [
+      { ...record('1%'), KPI_ID: 'SW-00', KPI_Title: 'Invalid Transaction Rate' },
+      { ...record('2%'), KPI_ID: 'SW-12', KPI_Title: 'Invalid Transaction Rate' },
+      { ...record('95%'), KPI_ID: 'KPI-D-11', KPI_Title: 'Device Availability' },
+    ];
+
+    it('keeps same-titled KPIs distinct in charts and filters', () => {
+      const groups = groupByKPITitle(duplicateTitles);
+      const options = extractFilterOptions(duplicateTitles).kpiTitles;
+
+      expect(Object.keys(groups)).toContain('SW-00: Invalid Transaction Rate');
+      expect(Object.keys(groups)).toContain('SW-12: Invalid Transaction Rate');
+      expect(options).toContain('SW-00: Invalid Transaction Rate');
+      expect(filterData(duplicateTitles, {
+        kpiTitles: ['SW-00: Invalid Transaction Rate'],
+      })).toEqual([duplicateTitles[0]]);
+    });
+
+    it('classifies hardware SQL IDs independently of their prefixes', () => {
+      const chart = createKPICategoryChart(duplicateTitles);
+
+      expect(chart.data.labels).toEqual(['Hardware', 'Software']);
+      expect(chart.data.datasets[0].data).toEqual([2, 1]);
     });
   });
 

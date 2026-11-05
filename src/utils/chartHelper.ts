@@ -146,7 +146,11 @@ export const createKPICategoryChart = (data: KPIRecord[]): ChartConfig => {
   };
 
   data.forEach((record) => {
-    if (record.KPI_ID.startsWith('HW')) categories['Hardware']++;
+    if (
+      record.KPI_ID.startsWith('HW')
+      || record.KPI_ID === 'SW-00'
+      || record.KPI_ID === 'KPI-D-11'
+    ) categories['Hardware']++;
     else if (record.KPI_ID.startsWith('SW')) categories['Software']++;
     else if (record.KPI_ID.startsWith('CT')) categories['Central']++;
     else if (record.KPI_ID.startsWith('CMP')) categories['Compliance']++;

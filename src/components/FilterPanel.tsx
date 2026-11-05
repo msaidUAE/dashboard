@@ -128,7 +128,7 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
 
       {renderFilterSection('📅 Dates', 'dates', filterOptions.dates)}
       {renderFilterSection('🛣️ Lanes', 'lanes', filterOptions.lanes)}
-      {renderFilterSection('📊 KPI Titles', 'kpiTitles', filterOptions.kpiTitles)}
+      {renderFilterSection('📊 KPIs', 'kpiTitles', filterOptions.kpiTitles)}
       {renderFilterSection('📈 Result Ranges', 'actualResultRanges', filterOptions.actualResultRanges)}
 
       <div className="filter-info">

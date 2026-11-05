@@ -35,6 +35,9 @@ export const parseCSV = (csvContent: string): KPIRecord[] => {
   return records.filter((r) => r.Date && r.Lane && r.KPI_Title);
 };
 
+export const getKPIKey = (record: KPIRecord): string =>
+  record.KPI_ID ? `${record.KPI_ID}: ${record.KPI_Title}` : record.KPI_Title;
+
 /**
  * Properly parse a CSV line handling quoted fields
  */
@@ -79,7 +82,7 @@ export const extractFilterOptions = (data: KPIRecord[]) => {
       Array.from(new Set(data.map((r) => r.Date)))
     ).map((d) => formatDate(d)),
     lanes: Array.from(new Set(data.map((r) => r.Lane))).sort(),
-    kpiTitles: Array.from(new Set(data.map((r) => r.KPI_Title)))
+    kpiTitles: Array.from(new Set(data.map(getKPIKey)))
       .filter((k) => k && k !== 'NO_DATA_AVAILABLE')
       .sort(),
     actualResultRanges: RESULT_RANGES,
@@ -272,7 +275,7 @@ export const filterData = (
     if (filters.lanes?.length && !filters.lanes.includes(record.Lane)) {
       return false;
     }
-    if (filters.kpiTitles?.length && !filters.kpiTitles.includes(record.KPI_Title)) {
+    if (filters.kpiTitles?.length && !filters.kpiTitles.includes(getKPIKey(record))) {
       return false;
     }
 
@@ -312,15 +315,16 @@ export const sortDatesChronologically = (dates: string[]): string[] => {
 };
 
 /**
- * Group data by KPI Title
+ * Group data by KPI ID and title so same-titled KPIs remain distinct.
  */
 export const groupByKPITitle = (data: KPIRecord[]) => {
   const grouped: { [key: string]: KPIRecord[] } = {};
   data.forEach((record) => {
-    if (!grouped[record.KPI_Title]) {
-      grouped[record.KPI_Title] = [];
+    const key = getKPIKey(record);
+    if (!grouped[key]) {
+      grouped[key] = [];
     }
-    grouped[record.KPI_Title].push(record);
+    grouped[key].push(record);
   });
   return grouped;
 };

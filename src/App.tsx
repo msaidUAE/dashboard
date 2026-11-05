@@ -52,7 +52,7 @@ const App: React.FC = () => {
           setStats({
             totalRecords: parsedData.length,
             uniqueLanes: new Set(parsedData.map(r => r.Lane)).size,
-            uniqueKPIs: new Set(parsedData.map(r => r.KPI_Title)).size,
+            uniqueKPIs: new Set(parsedData.map(r => r.KPI_ID)).size,
             dateRange: {
               start: dates[0],
               end: dates[dates.length - 1],
