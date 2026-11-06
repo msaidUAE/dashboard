@@ -33,6 +33,14 @@ This server is intended for the trusted company LAN; it provides no authenticati
 
 Use `npm run build` to build without starting the server, `npm run serve:lan` to serve an existing build, and `npm run test:lan-server` to run the static-server tests.
 
+## Public GitHub Pages Deployment
+
+This static dashboard is also configured for GitHub Pages at `https://msaiduae.github.io/dashboard/`. The Pages build uses `/dashboard/` as its asset and CSV base path, while the default build remains rooted at `/` for the company-LAN server.
+
+The hourly GitHub Actions workflow runs on a Windows self-hosted runner on the CSV-producing machine. It synchronizes the two validated CSV copies from the configured `KPI_CSV_SOURCE_ROOT`, commits and pushes only those CSV files when they change, then builds and deploys the site. Configure the repository's Pages source as **GitHub Actions** and set the repository Actions variable `KPI_CSV_SOURCE_ROOT` to the absolute path of this dashboard's live working directory. Keep the runner online for hourly updates. Detailed setup is in the [deployment runbook](./.github/DEPLOYMENT_RUNBOOK.md).
+
+**Public data notice:** the GitHub repository and deployed Pages site are public. Anyone can access the dashboard and download its KPI CSV; do not include sensitive data.
+
 ---
 
 ## 📋 Table of Contents

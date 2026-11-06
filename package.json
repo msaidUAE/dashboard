@@ -38,6 +38,7 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsc --noEmit && vite build",
+    "build:pages": "cross-env VITE_BASE_PATH=/dashboard/ npm run build",
     "serve:lan": "node scripts/serve-dashboard.js",
     "deploy:lan": "npm run build && npm run serve:lan",
     "test:lan-server": "node --test scripts/serve-dashboard.test.js",

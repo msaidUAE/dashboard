@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   root: process.cwd(),
-  base: '/',
+  base: process.env.VITE_BASE_PATH || '/',
   server: {
     port: 3000,
     open: true,
