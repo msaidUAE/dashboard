@@ -103,7 +103,7 @@ const App: React.FC = () => {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1>🎯 Professional KPI Analysis Dashboard</h1>
+          <h1> Professional KPI Analysis Dashboard</h1>
           <p className="subtitle">
             KPI Data Visualization & Performance Analytics
             {lastUpdated && ` • Updated ${lastUpdated.toLocaleString()} • Refreshes every 5 minutes`}
@@ -137,7 +137,7 @@ const App: React.FC = () => {
       </div>
 
       <footer className="app-footer">
-        <p>© 2026 Tahseel - Professional KPI Analysis Platform</p>
+        <p>© 2026 Tahseel Information Technology - Professional KPI Analysis Platform</p>
       </footer>
     </div>
   );

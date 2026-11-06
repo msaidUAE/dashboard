@@ -97,7 +97,13 @@ export const DataTable: React.FC<DataTableProps> = ({ data, maxRows = 20 }) => {
               <th onClick={() => handleSort('Actual_Result')}>
                 Result <SortIcon column="Actual_Result" />
               </th>
-              <th>Status</th>
+              <th onClick={() => handleSort('Target')}>
+                Target <SortIcon column="Target" />
+              </th>
+              <th onClick={() => handleSort('Pass_Fail')}>
+                PASS/FAIL <SortIcon column="Pass_Fail" />
+              </th>
+              <th>Performance</th>
               <th onClick={() => handleSort('Data_Source')}>
                 Source <SortIcon column="Data_Source" />
               </th>
@@ -112,6 +118,16 @@ export const DataTable: React.FC<DataTableProps> = ({ data, maxRows = 20 }) => {
                   <td>{record.Lane}</td>
                   <td className="kpi-title">{record.KPI_Title}</td>
                   <td className="result-value">{record.Actual_Result}</td>
+                  <td>{record.Target || 'N/A'}</td>
+                  <td>
+                    <span className={`badge ${record.Pass_Fail === 'PASS'
+                      ? 'badge-pass'
+                      : record.Pass_Fail === 'FAIL'
+                        ? 'badge-fail'
+                        : 'badge-no-data'}`}>
+                      {record.Pass_Fail || 'N/A'}
+                    </span>
+                  </td>
                   <td>
                     <span className={`badge ${getStatusBadge(status)}`}>
                       {status}

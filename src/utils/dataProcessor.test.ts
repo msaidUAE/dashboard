@@ -8,7 +8,9 @@ import {
   formatResultValue,
   groupByKPITitle,
   getResultRange,
+  isRatioPercentageKPI,
   isSecondsValue,
+  parseCSV,
   parseNumericValue,
 } from './dataProcessor';
 import { createKPICategoryChart } from './chartHelper';
@@ -22,6 +24,8 @@ const record = (Actual_Result: string): KPIRecord => ({
   Actual_Result,
   Data_Source: 'MASAR API - Production',
   Confidence: 'HIGH',
+  Target: '',
+  Pass_Fail: '',
 });
 
 describe('elapsed-time KPI handling', () => {
@@ -78,5 +82,70 @@ describe('elapsed-time KPI handling', () => {
     expect(formatResultValue('95.50')).toBe('95.5%');
     expect(parseNumericValue('125%')).toBe(100);
     expect(determineStatus('95%')).toBe(KPIStatus.EXCELLENT);
+  });
+
+  it('orders date filter options from newest to oldest chronologically', () => {
+    const records = [
+      { ...record('1%'), Date: '31102026' },
+      { ...record('2%'), Date: '04112026' },
+      { ...record('3%'), Date: '05112026' },
+    ];
+
+    expect(extractFilterOptions(records).dates).toEqual([
+      '05/11/2026',
+      '04/11/2026',
+      '31/10/2026',
+    ]);
+  });
+
+  it('parses target and SQL pass/fail fields while remaining compatible with old CSV rows', () => {
+    const records = parseCSV([
+      'Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence,Target,Pass_Fail',
+      '04112026,Lane 1,Daily,HW-01,ANPR Detection Rate,95.01%,API,HIGH,> 95%,PASS',
+      '03112026,Lane 1,Old,HW-01,ANPR Detection Rate,95%,API,HIGH',
+    ].join('\n'));
+
+    expect(records[0].Target).toBe('> 95%');
+    expect(records[0].Pass_Fail).toBe('PASS');
+    expect(records[1].Target).toBe('');
+    expect(records[1].Pass_Fail).toBe('');
+  });
+
+  describe('ratio-only chart eligibility', () => {
+    it('includes percentage ratios, including numeric values from percentage KPI IDs', () => {
+      expect(isRatioPercentageKPI({
+        ...record('97.56'),
+        KPI_ID: 'SW-02',
+      })).toBe(true);
+      expect(isRatioPercentageKPI({
+        ...record('85%'),
+        KPI_ID: 'LEGACY-RATE',
+      })).toBe(true);
+    });
+
+    it('excludes time, count, status, and unavailable metrics', () => {
+      expect(isRatioPercentageKPI({
+        ...record('15.472 sec'),
+        KPI_ID: 'SW-13',
+        KPI_Title: 'Plaza Processing Time',
+      })).toBe(false);
+      expect(isRatioPercentageKPI({
+        ...record('15.472'),
+        KPI_ID: 'SW-13',
+        KPI_Title: 'Plaza Processing Time',
+      })).toBe(false);
+      expect(isRatioPercentageKPI({
+        ...record('42'),
+        KPI_ID: 'COUNT-01',
+      })).toBe(false);
+      expect(isRatioPercentageKPI({
+        ...record('SUCCESS'),
+        KPI_ID: 'CT-01',
+      })).toBe(false);
+      expect(isRatioPercentageKPI({
+        ...record('N/A'),
+        KPI_ID: 'SW-02',
+      })).toBe(false);
+    });
   });
 });

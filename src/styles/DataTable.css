@@ -177,6 +177,16 @@
   color: var(--color-primary-700);
 }
 
+.badge-pass {
+  background: var(--color-success-100);
+  color: var(--color-success-700);
+}
+
+.badge-fail {
+  background: var(--color-error-100);
+  color: var(--color-error-600);
+}
+
 .pagination {
   display: flex;
   justify-content: center;

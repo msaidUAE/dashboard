@@ -29,6 +29,8 @@ export const parseCSV = (csvContent: string): KPIRecord[] => {
       Actual_Result: values[5]?.trim() || '',
       Data_Source: values[6]?.trim() || '',
       Confidence: values[7]?.trim() || '',
+      Target: values[8]?.trim() || '',
+      Pass_Fail: values[9]?.trim() || '',
     };
   });
 
@@ -80,7 +82,7 @@ export const extractFilterOptions = (data: KPIRecord[]) => {
   return {
     dates: sortDatesChronologically(
       Array.from(new Set(data.map((r) => r.Date)))
-    ).map((d) => formatDate(d)),
+    ).reverse().map((d) => formatDate(d)),
     lanes: Array.from(new Set(data.map((r) => r.Lane))).sort(),
     kpiTitles: Array.from(new Set(data.map(getKPIKey)))
       .filter((k) => k && k !== 'NO_DATA_AVAILABLE')
@@ -108,6 +110,51 @@ export const isNoData = (value: string): boolean => {
 /** Detect numeric results explicitly reported in seconds. */
 export const isSecondsValue = (value: string): boolean =>
   /^\s*[-+]?(?:(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d*)?|\.\d+)\s*(?:s|sec(?:onds)?)\s*$/i.test(value);
+
+const PERCENTAGE_KPI_IDS = new Set([
+  'HW-01',
+  'HW-03',
+  'HW-06',
+  'HW-07',
+  'HW-08',
+  'HW-09',
+  'HW-11',
+  'HW-12',
+  'KPI-D-11',
+  'SW-00',
+  'SW-01',
+  'SW-02',
+  'SW-03',
+  'SW-06',
+  'SW-07',
+  'SW-08',
+  'SW-09',
+  'SW-10',
+  'SW-11',
+  'SW-12',
+  'SW-14',
+]);
+
+/**
+ * Graph only ratio percentages. Bare numeric values are accepted only for
+ * catalog IDs whose KPI unit is percentage; seconds, statuses, and counts
+ * are excluded rather than guessed from their numeric values.
+ */
+export const isRatioPercentageKPI = (record: KPIRecord): boolean => {
+  const result = record.Actual_Result.trim();
+  if (
+    isNoData(result) ||
+    isSecondsValue(result) ||
+    result.toUpperCase() === 'SUCCESS'
+  ) {
+    return false;
+  }
+
+  const numericPercentage = /^[-+]?(?:\d+(?:\.\d*)?|\.\d+)\s*%?$/.test(result);
+  if (!numericPercentage) return false;
+
+  return result.endsWith('%') || PERCENTAGE_KPI_IDS.has(record.KPI_ID);
+};
 
 /**
  * Parse the numeric portion of a result while preserving elapsed seconds.

@@ -120,9 +120,11 @@ Time-series analysis and trend tracking
 
 ### 📊 KPI Metrics Tracked
 
-The dashboard derives KPI titles from its CSV instead of fixing a metric count in the UI. The current daily snapshot catalog contains 33 IDs: 24 implemented calculations and 9 explicitly marked `N/A` until formulas are supplied.
+The dashboard derives KPI titles from its CSV instead of fixing a metric count in the UI. The daily snapshot catalog contains 24 SQL-defined KPI IDs; source-limited results are explicitly marked `N/A` until the required fields are available.
 
-Elapsed-time results retain their seconds unit throughout the table and charts. Because this CSV does not include KPI-specific target thresholds, seconds metrics are shown neutrally and labeled **UNSCORED** rather than being presented as percentages or assigned misleading performance colors.
+The table displays each KPI's SQL target and strict PASS/FAIL result. SQL targets are matched by KPI meaning, preserve comparison operators and time units, and unmatched definitions use the default `>= 95%` target. Unavailable results or results whose units cannot be compared are labeled `N/A`, not `FAIL`. Elapsed-time results retain their seconds unit and are excluded from percentage charts.
+
+The three graph views plot ratio-based percentage KPIs only. Time, count, status, and unavailable values are excluded from chart datasets; bare numeric values are treated as percentages only for KPI IDs whose catalog unit is percentage.
 
 **Hardware Category (HW)**
 - ANPR Detection Rate

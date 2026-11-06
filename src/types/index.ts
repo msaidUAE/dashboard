@@ -7,6 +7,8 @@ export interface KPIRecord {
   Actual_Result: string;
   Data_Source: string;
   Confidence: string;
+  Target: string;
+  Pass_Fail: string;
 }
 
 export interface FilterState {
