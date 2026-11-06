@@ -65,12 +65,12 @@ Display performance metrics across all lanes simultaneously
 - Responsive and scrollable on smaller devices
 
 **Lanes Included**:
-- Al_Dhead_Lane_1_Daily
-- Al_Dhead_Lane_2_Daily
-- Al_Dhead_Lane_3_Daily
-- Al_Madam_Lane_3
-- Al_Zubair_Lane_3
-- Al_Zubair_Lane_4
+- Dhead (Lane 1)
+- Dhead (Lane 2)
+- Dhead (Lane 3)
+- Madam (Lane 3)
+- Zubair (Lane 3)
+- Zubair (Lane 4)
 
 #### 2. **By KPI Heatmap View**
 Advanced pattern recognition across dimensions
@@ -330,7 +330,7 @@ Perfect for comparing performance across locations.
 **Layout**:
 ```
 ┌─────────────────────────────────────────────────┐
-│ Lane: Al_Dhead_Lane_1_Daily                     │
+│ Lane: Dhead (Lane 1)                             │
 │ ┌───────────────────────────────────────────┐   │
 │ │ Bar Chart (KPI count from CSV)             │   │
 │ │ X-axis: KPI Names | Y-axis: Values 0-100 │   │
@@ -413,7 +413,7 @@ KPI: System Availability
 - All selected filters must match simultaneously
 - Example: Show records where:
   - Date = 05/07/2026 **AND**
-  - Lane = Al_Dhead_Lane_1_Daily **AND**
+  - Lane = Dhead (Lane 1) **AND**
   - KPI = System Availability **AND**
   - Result Range = 95-100%
 
@@ -448,8 +448,8 @@ Filters automatically extract real values from your CSV:
 
 **Lanes Filter**:
 - Automatically shows 6 unique lanes from your data
-- Real lane identifiers from CSV
-- Example: Al_Dhead_Lane_1_Daily, Al_Madam_Lane_3...
+- Friendly lane names from CSV
+- Example: Dhead (Lane 1), Madam (Lane 3)...
 
 **KPI Titles Filter**:
 - Automatically shows KPI titles from the CSV
@@ -472,7 +472,7 @@ Your CSV file should follow this structure:
 | Column | Format | Example | Description |
 |--------|--------|---------|-------------|
 | Date | DDMMYYYY | 05072026 | Day, month, year |
-| Lane | String | Al_Dhead_Lane_1_Daily | Location identifier |
+| Lane | String | Dhead (Lane 1) | Location identifier |
 | Batch | Integer | 123 | Batch number |
 | KPI_ID | String | HW-001 | KPI identifier |
 | KPI_Title | String | ANPR Detection Rate | Human-readable name |
@@ -484,7 +484,7 @@ Your CSV file should follow this structure:
 
 ```csv
 Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence
-05072026,Al_Dhead_Lane_1_Daily,123,HW-001,ANPR Detection Rate,95.5,System_A,HIGH
+05072026,Dhead (Lane 1),123,HW-001,ANPR Detection Rate,95.5,System_A,HIGH
 ```
 
 ### Data Quality Standards

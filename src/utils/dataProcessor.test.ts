@@ -111,6 +111,30 @@ describe('elapsed-time KPI handling', () => {
     expect(records[1].Pass_Fail).toBe('');
   });
 
+  it('displays legacy lane IDs using the requested friendly names on every dashboard view', () => {
+    const laneNames = [
+      ['Al_Dhead_Lane_1_Daily', 'Dhead (Lane 1)'],
+      ['Al_Dhead_Lane_2_Daily', 'Dhead (Lane 2)'],
+      ['Al_Dhead_Lane_3_Daily', 'Dhead (Lane 3)'],
+      ['Al_Madam_Lane_3', 'Madam (Lane 3)'],
+      ['Al_Zubair_Lane_3', 'Zubair (Lane 3)'],
+      ['Al_Zubair_Lane_4', 'Zubair (Lane 4)'],
+    ] as const;
+    const parsed = parseCSV([
+      'Date,Lane,Batch,KPI_ID,KPI_Title,Actual_Result,Data_Source,Confidence,Target,Pass_Fail',
+      ...laneNames.map(([oldName]) =>
+        `04112026,${oldName},Daily,HW-01,ANPR Detection Rate,95%,API,HIGH,> 95%,PASS`,
+      ),
+      '04112026,Al_Zubair_Lane_3_h,Daily,HW-01,ANPR Detection Rate,95%,API,HIGH,> 95%,PASS',
+    ].join('\n'));
+
+    expect(parsed.slice(0, laneNames.length).map(({ Lane }) => Lane)).toEqual(
+      laneNames.map(([, displayName]) => displayName),
+    );
+    expect(parsed[laneNames.length].Lane).toBe('Zubair (Lane 3)');
+    expect(new Set(parsed.map(({ Lane }) => Lane)).size).toBe(6);
+  });
+
   describe('ratio-only chart eligibility', () => {
     it('includes percentage ratios, including numeric values from percentage KPI IDs', () => {
       expect(isRatioPercentageKPI({

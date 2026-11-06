@@ -1,13 +1,18 @@
 import { KPIRecord, FilterState, KPIStatus } from '../types';
 
-/**
- * Lane names are normalized so that the raw `Al_Zubair_Lane_3_h` record
- * (a single-day duplicate of `Al_Zubair_Lane_3` in the source CSV) maps onto
- * the canonical lane. This keeps the dashboard at the 6 defined lanes while
- * preserving all 1403 source records.
- */
+const LEGACY_LANE_NAMES: Record<string, string> = {
+  Al_Dhead_Lane_1_Daily: 'Dhead (Lane 1)',
+  Al_Dhead_Lane_2_Daily: 'Dhead (Lane 2)',
+  Al_Dhead_Lane_3_Daily: 'Dhead (Lane 3)',
+  Al_Madam_Lane_3: 'Madam (Lane 3)',
+  Al_Zubair_Lane_3: 'Zubair (Lane 3)',
+  Al_Zubair_Lane_4: 'Zubair (Lane 4)',
+};
+
+/** Normalize legacy CSV lane IDs for consistent display across the dashboard. */
 const normalizeLane = (lane: string): string => {
-  return lane.replace(/_h$/, '');
+  const canonicalLane = lane.replace(/_h$/, '');
+  return LEGACY_LANE_NAMES[canonicalLane] ?? canonicalLane;
 };
 
 /**
