@@ -106,7 +106,7 @@ const App: React.FC = () => {
           <h1> Professional KPI Analysis Dashboard</h1>
           <p className="subtitle">
             KPI Data Visualization & Performance Analytics
-            {lastUpdated && ` • Updated ${lastUpdated.toLocaleString()} • Refreshes every 5 minutes`}
+            {lastUpdated && ` • Updated ${lastUpdated.toLocaleString()} • Refreshes every 15 minutes`}
           </p>
         </div>
       </header>
